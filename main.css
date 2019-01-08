@@ -1,0 +1,45 @@
+
+#aboutmefoto {
+  background-color: grey;
+  margin-top: 80px;
+}
+
+#aboutmefoto img {
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+  font-size: 30px;
+}
+
+#aboutme {
+  margin: 40px 0;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+#skills {
+  background-color: grey;
+  margin: 50px 0;
+  padding: 20px 0;
+}
+
+.progress {
+  height: 20px;
+}
+
+.briefcase {
+  padding: 5px !important;
+}
+
+.thumbtack {
+  margin-top: 40px;
+}
