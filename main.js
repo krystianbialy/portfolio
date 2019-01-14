@@ -17,6 +17,15 @@ $(document).ready(function() {
     gallery: {
       enabled: true
     },
+
+    image: {
+      titleSrc: 'title',
+      titleSrc: function(item) {
+        return item.el.attr('title') + '<small>by Kowalski</small>';
+      }
+    }
+
+
     // other options
   });
 

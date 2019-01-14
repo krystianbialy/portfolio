@@ -1,6 +1,7 @@
 #aboutmefoto {
   background-color: grey;
   margin-top: 80px;
+  padding: 50px 0;
 }
 
 #aboutmefoto img {
@@ -19,6 +20,7 @@ h6 {
 
 #aboutme {
   margin: 40px 0;
+  padding: 60px 0;
 }
 
 h3 {
@@ -28,7 +30,7 @@ h3 {
 #skills {
   background-color: grey;
   margin: 50px 0;
-  padding: 20px 0;
+  padding: 80px 0;
 }
 
 .progress {
@@ -46,4 +48,18 @@ h3 {
 .gallery img {
   width: 100%;
   height: 118px;
+}
+
+#experience {
+  padding: 50px 0;
+}
+
+#portfolio {
+  background-color: grey;
+  margin: 10px 0;
+  padding: 80px 0;
+}
+
+.mfp-img {
+  max-height: 800px !important;
 }

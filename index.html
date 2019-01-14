@@ -6,6 +6,8 @@
   <title>Portfolio K. BiałyX</title>
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="phpmailer/css/mailer.css" />
+  <link rel="stylesheet" href="phpmailer/css/form-elements.css" />
   <link rel="stylesheet" href="fontawesome/css/all.css" />
   <link rel="stylesheet" href="css/magnific-popup.css" />
 </head>
@@ -15,26 +17,26 @@
   <header>
     <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
       <div class="container top">
-        <a class="navbar-brand" href="#aboutme">Krystian Biały Portfolio</a>
+        <a class="navbar-brand" href="#aboutmefoto">Krystian Biały Portfolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="przełącznik nawigacji">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="mainmenu">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#aboutmefoto">O mnie</a>
+              <a class="nav-link" href="#aboutme">O mnie</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#skills">Umiejętności</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Doświadczenie</a>
+              <a class="nav-link" href="#experience">Doświadczenie</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projekty</a>
+              <a class="nav-link" href="#portfolio">Projekty</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Kontakt</a>
+              <a class="nav-link" href="#contact">Kontakt</a>
             </li>
           </ul>
         </div>
@@ -181,24 +183,71 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3 mt-5">
           <div class="gallery">
-            <a class="view" href="img/1.jpg"><img src="img/1.jpg" alt="" /></a>
+            <a class="view" title="Tytuł" href="img/1.jpg"><img src="img/1.jpg" alt="" /></a>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 mt-5">
           <div class="gallery">
-            <a class="view" href="img/2.jpg"><img src="img/2.jpg" alt="" /></a>
+            <a class="view" title="Tytuł" href="img/2.jpg"><img src="img/2.jpg" alt="" /></a>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 mt-5">
           <div class="gallery">
-            <a class="view" href="img/3.jpg"><img src="img/3.jpg" alt="" /></a>
+            <a class="view" title="Tytuł" href="img/3.jpg"><img src="img/3.jpg" alt="" /></a>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 mt-5">
           <div class="gallery">
-            <a class="view" href="img/4.jpg"><img src="img/4.jpg" alt="" /></a>
+            <a class="view" title="Tytuł" href="img/4.jpg"><img src="img/4.jpg" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="inner-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2 text">
+            <h1>Bootstrap Contact Form Tutorial</h1>
+            <div class="description">
+              <p>
+                Learn how to create a working Bootstrap contact form using PHP, jQuery, AJAX, HTML5 and CSS3.
+                Check it out on <a href="http://azmind.com">AZMIND</a>!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-3 form-box">
+            <div class="form-top">
+              <h3>Contact us</h3>
+              <p>Fill in the form below to send us a message:</p>
+            </div>
+            <div class="form-bottom contact-form">
+              <form role="form" action="contact.php" method="post">
+                <div class="form-group">
+                  <label class="sr-only" for="contact-email">Email</label>
+                  <input type="text" name="email" placeholder="Email..." class="contact-email form-control" id="contact-email">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="contact-subject">Subject</label>
+                  <input type="text" name="subject" placeholder="Subject..." class="contact-subject form-control" id="contact-subject">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="contact-message">Message</label>
+                  <textarea name="message" placeholder="Message..." class="contact-message form-control" id="contact-message"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="contact-antispam">Antispam question: 7 + 5 = ?</label>
+                  <input type="text" name="antispam" placeholder="Your answer..." class="contact-antispam form-control" id="contact-antispam">
+                </div>
+                <button type="submit" class="btn">Send message</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -211,6 +260,10 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="main.js"></script>
   <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="phpmailer/js/jquery.backstretch.min.js"></script>
+  <script src="phpmailer/js/scripts.js"></script>
+
+
 </body>
 
 </html>
