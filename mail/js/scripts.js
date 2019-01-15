@@ -36,7 +36,7 @@ jQuery(document).ready(function() {
 	            }
 	            if(json.emailMessage == '' && json.subjectMessage == '' && json.messageMessage == '' && json.antispamMessage == '') {
 	                $('.contact-form form').fadeOut('fast', function() {
-	                    $('.contact-form').append('<p>Thanks for contacting us! We will get back to you very soon.</p>');
+	                    $('.contact-form').append('<p>Dziękuje za skontaktowanie się ze mną! Postaram się odpowiedzieć jak najszybciej. </p></br><p>Do usłyszenia :)</p>');
 	                    // reload background
 	    				$.backstretch("resize");
 	                });
