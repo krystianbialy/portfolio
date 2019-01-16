@@ -89,3 +89,14 @@ h3 {
   border: 70px solid #000;
   border-radius: 50%;
 }
+
+#footer {
+  background-color: black;
+}
+
+#footer p {
+  font-size: 20px;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
