@@ -1,5 +1,9 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
 #aboutmefoto {
-  background-color: grey;
+  background-image: url(tło.jpg);
   margin-top: 80px;
   padding: 50px 0;
 }
