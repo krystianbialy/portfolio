@@ -6,6 +6,7 @@ body {
   background-image: url(tło.jpg);
   margin-top: 80px;
   padding: 50px 0;
+  color: white;
 }
 
 #aboutmefoto img {
@@ -46,7 +47,6 @@ h3 {
 
 #skills {
   background-color: grey;
-  margin: 50px 0;
   padding: 80px 0;
 }
 
@@ -196,4 +196,27 @@ h3 {
 #return-to-top:hover i {
   color: #fff;
   top: 5px;
+}
+
+div.container.parallax {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section.module.parallax {
+  height: 300px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+section.module.parallax-1 {
+  background-image: url(tłoparallax.png);
+}
+
+@media only screen and (max-width: 575px) {
+  .returntotop {
+    display: none;
+  }
 }
