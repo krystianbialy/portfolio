@@ -16,8 +16,22 @@
 
 
 <body>
-  <header>
-    <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+
+  <section id="header">
+    <div class="container max">
+      <div class="row">
+        <div class="col-8 mx-auto text-center">
+          <h1>Krystian Biały</h1>
+          <p>
+            Webdeveloper
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <header class="sticky-top">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md">
       <div class="container top">
         <a class="navbar-brand" href="#aboutmefoto">Krystian Biały</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="przełącznik nawigacji">
@@ -46,28 +60,11 @@
     </nav>
   </header>
 
-  <section id="aboutmefoto">
-    <div class="container">
-      <div class="row">
-        <div class="col-8 col-md-3 mx-auto">
-          <img src="https://static.zakumaj.pl/data/store/2015/10/98d0a565-4d35-88fb-5557-3977dee48380/picture_medium.jpg" alt="Zdjęcie profilowe- Krystian Biały" />
-        </div>
-        <div class="w-100"></div>
-        <div class="col-md-5 mx-auto text-center">
-          <h1>Krystian Biały</h1>
-          <p>
-            Webdeveloper
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section id="aboutme">
     <section class="module content">
       <div class="container">
         <div class="row">
-          <div class="col-10 col-md-10 mx-auto text-center">
+          <div class="col-7 text-center">
             <h2 class="mb-4">Cześć!</h2>
             <p class="mb-5">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec faucibus augue, ac lacinia risus. Suspendisse in aliquet metus. Vestibulum nec velit urna. Vestibulum ornare consectetur tellus, sed dignissim est congue
@@ -76,21 +73,8 @@
               felis a, cursus ex. Suspendisse vitae convallis ligula. Nulla vulputate faucibus nulla, eget finibus quam vulputate at. Sed eu vulputate metus. Maecenas a imperdiet nibh. Sed eu lectus auctor, efficitur felis a, cursus purus.
             </p>
           </div>
-          <div class="w-100"></div>
-          <div class="col-8 col-md-2 mt-4 mx-auto text-center">
-            <i class="fas fa-4x fa-user text-primary"></i>
-            <h3 class="my-2">Podstawowe info.</h3>
-            <p class="text-muted">Data urodzenia 27.07.1995r.</p>
-          </div>
-          <div class="col-8 col-md-2 mt-4 mx-auto text-center">
-            <i class="fas fa-4x fa-user text-primary"></i>
-            <h3 class="my-2">Podstawowe info.</h3>
-            <p class="text-muted">Data urodzenia 27.07.1995r.</p>
-          </div>
-          <div class="col-8 col-md-2 mt-4 mx-auto text-center">
-            <i class="fas fa-4x fa-user text-primary"></i>
-            <h3 class="my-2">Podstawowe info.</h3>
-            <p class="text-muted">Data urodzenia 27.07.1995r.</p>
+          <div class="col-5">
+            <img src="img/profilowe.png" />
           </div>
           <div class="w-100"></div>
           <a class="btn btn-primary btn-xl mx-auto mt-5 animated infinite pulse" href="https://wikipedia.org">Pobierz moje CV (PDF)</a>
@@ -99,7 +83,7 @@
     </section>
   </section>
 
-  <section class="module parallax parallax-1">
+  <section class="module parallax parallax-1 d-none d-sm-block">
     <div class="container parallax"></div>
   </section>
 
@@ -267,10 +251,8 @@
 
   <div class="icon-bar d-none d-sm-block">
     <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-    <a href="#" class="google"><i class="fab fa-google"></i></a>
     <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-    <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+    <a href="#" class="github"><i class="fab fa-github"></i></a>
   </div>
 
   <div class="returntotop">

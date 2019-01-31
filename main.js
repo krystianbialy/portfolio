@@ -43,4 +43,18 @@ $(document).ready(function() {
     }, 1000);
   });
 
+  $("body").click(function(event) {
+    // only do this if navigation is visible, otherwise you see jump in navigation while collapse() is called
+    if ($(".navbar-collapse").is(":visible") && $(".navbar-toggler").is(":visible")) {
+      $('.navbar-collapse').collapse('toggle');
+    }
+  });
+
+  $(function() {
+    $.scrollify({
+      section: ".example-classname",
+    });
+  });
+
+
 });

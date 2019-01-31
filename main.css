@@ -1,34 +1,45 @@
+
+
+#header {
+  background-image: url(tło.jpg);
+  padding: 187px 0;
+  color: white;
+  min-height: 100vh;
+
+}
+
 body {
   font-family: 'Lato', sans-serif;
 }
 
-#aboutmefoto {
-  background-image: url(tło.jpg);
-  margin-top: 80px;
-  padding: 50px 0;
-  color: white;
+.navbar {
+  background-color: #1700bb !important;
 }
 
-#aboutmefoto img {
-  width: 100%;
+.nav-item .nav-link {
+  color: white !important;
+  font-size: 20px;
+}
+
+.nav-item .nav-link:hover {
+  border-bottom: 1px solid white;
+}
+
+#aboutme img {
+  width: 80%;
   height: auto;
   padding: 20px 0;
   border-radius: 50%;
 }
 
-#aboutmefoto img:hover {
-  border-radius: 0%;
+h1 {
+  font-size: 8vw;
 }
 
-#aboutmefoto img {
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
+#header p {
+  font-size: 4vw;
 }
 
-h1,
 h2,
 h4,
 h5,
@@ -107,6 +118,7 @@ h3 {
 
 .icon-bar {
   position: fixed;
+  z-index: 2000;
   top: 44%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -134,23 +146,13 @@ h3 {
   color: white;
 }
 
-.twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.google {
-  background: #dd4b39;
-  color: white;
-}
-
 .linkedin {
   background: #007bb5;
   color: white;
 }
 
-.youtube {
-  background: #bb0000;
+.github {
+  background: grey;
   color: white;
 }
 
