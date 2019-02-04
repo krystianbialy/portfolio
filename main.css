@@ -5,6 +5,7 @@
   padding: 187px 0;
   color: white;
   min-height: 100vh;
+  min-width: 100vh;
 
 }
 
@@ -33,11 +34,19 @@ body {
 }
 
 h1 {
-  font-size: 8vw;
+  font-size: 6vw;
 }
 
 #header p {
-  font-size: 4vw;
+  font-size: 3vw;
+}
+
+.section03 {
+  font-size: 20px;
+}
+
+.fa-level-down-alt {
+  margin-top: 10px;
 }
 
 h2,

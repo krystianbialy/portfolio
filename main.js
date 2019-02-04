@@ -51,10 +51,12 @@ $(document).ready(function() {
   });
 
   $(function() {
-    $.scrollify({
-      section: ".example-classname",
+    $('a[href*=#skok]').on('click', function(e) {
+      e.preventDefault();
+      $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
     });
   });
+
 
 
 });
