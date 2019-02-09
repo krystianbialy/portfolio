@@ -2,15 +2,21 @@
 
 #header {
   background-image: url(tło.jpg);
-  padding: 187px 0;
+  padding-top: 100px;
+  padding-bottom: 150px;
   color: white;
   min-height: 100vh;
-  min-width: 100vh;
+  width: 100%;
+}
 
+html {
+  height:100vh;
 }
 
 body {
   font-family: 'Lato', sans-serif;
+  min-height: 100vh;
+
 }
 
 .navbar {
@@ -34,18 +40,25 @@ body {
 }
 
 h1 {
-  font-size: 6vw;
+
+  font-size: 10vmin;
 }
 
 #header p {
-  font-size: 3vw;
+
+  font-size: 6vmin;
 }
 
 .section03 {
+  margin-top: 40px;
   font-size: 20px;
+  color: white;
+}
+.section03:hover {
+  color: red;
 }
 
-.fa-level-down-alt {
+.fa-hand-point-down {
   margin-top: 10px;
 }
 
