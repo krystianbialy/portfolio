@@ -7,8 +7,6 @@
   width: 100%;
 }
 
-
-
 html {
   font-size: 17px;
 }
@@ -30,17 +28,21 @@ body {
   min-height: 100vh;
 }
 
+a {
+  outline: none;
+}
+
 .navbar {
   background-color: #1700bb !important;
 }
 
 .nav-item .nav-link {
   color: white !important;
-  font-size: 20px;
+  font-size: 19px;
 }
 
 .nav-item .nav-link:hover {
-  border-bottom: 1px solid white;
+  background: black;
 }
 
 #aboutme img {
@@ -62,18 +64,27 @@ h1 {
   font-size: 1.4rem;
 }
 
-.section03 {
-  font-size: 1.4rem;
-  color: white;
-}
-
-.section03:hover {
-  color: red;
-}
-
 .fa-hand-point-down {
   margin-top: 25px;
   font-size: 3vmin;
+}
+
+.more a {
+  font-size: 1.4rem;
+  color: white !important ;
+}
+
+.more a:hover {
+  color: red !important ;
+}
+
+.contact-top a {
+  color: white !important;
+}
+
+
+.navbar-brand {
+  font-size: 23px;
 }
 
 h2,
@@ -167,18 +178,13 @@ h3 {
   text-align: center;
   padding: 16px;
   transition: all 0.3s ease;
-  color: white;
+  color: white !important ;
   font-size: 20px;
 }
 
 /* Style the social media icons with color, if you want */
 .icon-bar a:hover {
   background-color: #000;
-  color: white;
-}
-
-.facebook {
-  background: #3B5998;
   color: white;
 }
 
@@ -197,14 +203,11 @@ h3 {
   bottom: 20px;
   right: 20px;
   background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.6);
   width: 50px;
   height: 50px;
   display: block;
   text-decoration: none;
-  -webkit-border-radius: 35px;
-  -moz-border-radius: 35px;
-  border-radius: 35px;
   display: none;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s ease;
@@ -233,7 +236,7 @@ h3 {
 
 #return-to-top:hover i {
   color: #fff;
-  top: 5px;
+
 }
 
 div.container.parallax {
@@ -253,8 +256,18 @@ section.module.parallax-1 {
   background-image: url(tłoparallax.png);
 }
 
-@media only screen and (max-width: 575px) {
-  .returntotop {
-    display: none;
+@media only screen and (max-width: 767px) {
+
+  .dwa {
+    order: 2;
   }
+
+  .jeden {
+    order: 1;
+  }
+
+  .trzy {
+    order: 3;
+  }
+
 }

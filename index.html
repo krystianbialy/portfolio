@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-Ua-Compatible" content="IE=edge">
   <title>K. Biały- CV & Portfolio</title>
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="main.css" />
@@ -21,22 +22,22 @@
   <section class="scroll" id="header">
     <div class="container max">
       <div class="row">
-        <div class="col-12 col-sm-8 mx-auto my-auto text-center">
+        <div class="col-12 col-sm-10 mx-auto my-auto text-center">
           <h1>Krystian Biały</h1>
           <p>
             Junior Front-end Developer
           </p>
           <div class="contact-top">
             <i class="fas fa-1x fa-envelope pt-3 mt-3 mr-2"></i>
-            krystian.bialy@onet.pl
+            <a target="_blank" href="#contact">krystian.bialy@onet.pl</a>
             </br>
             <i class="fas fa-1x fa-phone mt-4 mr-2"></i>
             728 376 556
             </br>
             <i class="fab fa-1x fa-github mt-4 mr-2"></i>
-            krystianbialy
+            <a target="_blank" href="https://github.com/krystianbialy">krystianbialy</a>
           </div>
-          <div>
+          <div class="more">
             <i class="fas fa-3x fa-hand-point-down animated infinite fadeOutDown slower"></i>
             </br></br></br></br>
             <a class="section03" href="#skok">Zobacz więcej !</a>
@@ -49,7 +50,7 @@
   <header class="sticky-top scroll" id="skok">
     <nav class="navbar navbar-dark bg-dark navbar-expand-md">
       <div class="container top">
-        <a class="navbar-brand" href="#aboutmefoto">Krystian Biały</a>
+        <a class="navbar-brand" href="">Krystian Biały</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="przełącznik nawigacji">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -81,7 +82,7 @@
     <section class="module content">
       <div class="container">
         <div class="row">
-          <div class="col-7 text-center">
+          <div class="col-12 col-md-6 col-lg-7 text-center dwa">
             <h2 class="mb-4">Cześć!</h2>
             <p class="mb-5">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec faucibus augue, ac lacinia risus. Suspendisse in aliquet metus. Vestibulum nec velit urna. Vestibulum ornare consectetur tellus, sed dignissim est congue
@@ -90,11 +91,13 @@
               felis a, cursus ex. Suspendisse vitae convallis ligula. Nulla vulputate faucibus nulla, eget finibus quam vulputate at. Sed eu vulputate metus. Maecenas a imperdiet nibh. Sed eu lectus auctor, efficitur felis a, cursus purus.
             </p>
           </div>
-          <div class="col-5">
+          <div class="col-12 col-md-6 col-lg-5 text-center jeden">
             <img src="img/profilowe.png" />
           </div>
           <div class="w-100"></div>
-          <a class="btn btn-primary btn-xl mx-auto mt-5 animated infinite pulse" href="https://wikipedia.org">Pobierz moje CV (PDF)</a>
+          <div class="col-12 text-center trzy">
+            <a target="_blank" class="btn btn-primary btn-xl mt-5 animated infinite pulse" href="https://wikipedia.org">Pobierz moje CV (PDF)</a>
+          </div>
         </div>
       </div>
     </section>
@@ -194,23 +197,23 @@
           <h6>Projekty</h6>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-3 mt-5">
+      <div class="row mt-4">
+        <div class="col-10 mx-auto col-md-6 col-lg-3 mt-3">
           <div class="gallery">
             <a class="view" title="Tytuł" href="img/1.jpg"><img src="img/1.jpg" alt="" /></a>
           </div>
         </div>
-        <div class="col-md-3 mt-5">
+        <div class="col-10 mx-auto col-md-6 col-lg-3 mt-3">
           <div class="gallery">
             <a class="view" title="Tytuł" href="img/2.jpg"><img src="img/2.jpg" alt="" /></a>
           </div>
         </div>
-        <div class="col-md-3 mt-5">
+        <div class="col-10 mx-auto col-md-6 col-lg-3 mt-3">
           <div class="gallery">
             <a class="view" title="Tytuł" href="img/3.jpg"><img src="img/3.jpg" alt="" /></a>
           </div>
         </div>
-        <div class="col-md-3 mt-5">
+        <div class="col-10 mx-auto col-md-6 col-lg-3 mt-3">
           <div class="gallery">
             <a class="view" title="Tytuł" href="img/4.jpg"><img src="img/4.jpg" alt="" /></a>
           </div>
@@ -267,13 +270,12 @@
   </section>
 
   <div class="icon-bar d-none d-sm-block">
-    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-    <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-    <a href="#" class="github"><i class="fab fa-github"></i></a>
+    <a target="_blank" href="https://www.linkedin.com/in/krystian-bia%C5%82y-a78923175/" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+    <a target="_blank" href="https://github.com/krystianbialy" class="github"><i class="fab fa-github"></i></a>
   </div>
 
-  <div class="returntotop">
-    <a href="javascript:" id="return-to-top"><i class="fas fa-chevron-up d-none d-sm-block"></i></a>
+  <div class="returntotop d-none d-sm-block">
+    <a href="javascript:" id="return-to-top"><i class="fas fa-arrow-up d-none d-sm-block"></i></a>
   </div>
 
 
