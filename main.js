@@ -7,7 +7,7 @@ $(document).ready(function() {
     if (target.length) {
       event.preventDefault();
       $('html, body').animate({
-        scrollTop: target.offset().top
+        scrollTop: target.offset().top -160
       }, 1000);
     }
   });
@@ -53,8 +53,48 @@ $(document).ready(function() {
   $(function() {
     $('a[href*=#skok]').on('click', function(e) {
       e.preventDefault();
-      $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+      $('html, body').animate({
+        scrollTop: $($(this).attr('href')).offset().top
+      }, 500, 'linear');
     });
+  });
+
+  ScrollReveal().reveal('.t1', {
+    reset: true,
+    delay: 300,
+    distance: 0,
+
+  });
+
+  ScrollReveal().reveal('.t2', {
+    reset: true,
+    delay: 500,
+    distance: 0,
+
+  });
+
+  ScrollReveal().reveal('.t3', {
+    reset: true,
+    delay: 700,
+    distance: 0,
+  });
+
+  ScrollReveal().reveal('.t4', {
+    reset: true,
+    delay: 900,
+    distance: 0,
+  });
+
+  ScrollReveal().reveal('.t5', {
+    reset: true,
+    delay: 1100,
+    distance: 0,
+  });
+
+  ScrollReveal().reveal('.t6', {
+    reset: true,
+    delay: 1300,
+    distance: 0,
   });
 
 

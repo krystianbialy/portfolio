@@ -15,7 +15,7 @@ img { max-width: 100%; }
 /***** Top content *****/
 
 .inner-bg {
-    padding: 40px 0 170px 0;
+    padding: 40px 0 150px 0;
 }
 
 .top-content h1 { color: #fff; }
@@ -43,12 +43,15 @@ img { max-width: 100%; }
 	text-align: left;
 }
 
-.form-top h3 { margin-top: 0; }
+.form-top h3 {
+	margin-top: 0;
+  text-align: center;
+}
 
 .form-bottom {
-	padding: 25px 25px 30px 25px;
-	background: #ebe6e0;
-	text-align: left;
+	padding: 20px 20px;
+	background: #F0EDE5;
+	text-align: center;
 }
 
 .form-bottom form textarea {
@@ -68,6 +71,6 @@ img { max-width: 100%; }
 
 @media (max-width: 767px) {
 
-	.inner-bg { padding: 40px 0 110px 0; }
+	.inner-bg { padding: 40px 0 100px 0; }
 
 }

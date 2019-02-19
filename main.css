@@ -32,8 +32,18 @@ a {
   outline: none;
 }
 
+.pulse {
+  background-color: #006E6D;
+  border-color: #006E6D;
+}
+.pulse:hover {
+  background-color: #00A591;
+  border-color: #00A591;
+
+}
+
 .navbar {
-  background-color: #1700bb !important;
+  background-color: #005960 !important;
 }
 
 .nav-item .nav-link {
@@ -42,7 +52,8 @@ a {
 }
 
 .nav-item .nav-link:hover {
-  background: black;
+  background: white;
+  color: black !important;
 }
 
 #aboutme img {
@@ -78,22 +89,6 @@ h1 {
   color: red !important ;
 }
 
-.more a:link {
-  cecha: wartość
-}
-
-.more a:visited {
-  cecha: wartość
-}
-
-.more a:hover {
-  cecha: wartość
-}
-
-.more a:active {
-  cecha: wartość
-}
-
 .contact-top a {
   color: white !important;
 }
@@ -112,7 +107,7 @@ h6 {
 
 #aboutme {
   margin: 40px 0;
-  padding: 60px 0;
+  padding: 100px 0;
 }
 
 h3 {
@@ -120,7 +115,7 @@ h3 {
 }
 
 #skills {
-  background-color: grey;
+  background-color: #F0EDE5;
   padding: 80px 0;
 }
 
@@ -179,11 +174,11 @@ h3 {
 }
 
 #contact {
-  background-color: grey;
+  background-color: #F0EDE5;
 }
 
 #footer {
-  background-color: black;
+  background-color: #005960;
 }
 
 #footer p {

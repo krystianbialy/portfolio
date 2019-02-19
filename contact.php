@@ -13,9 +13,8 @@ if($_POST) {
     $clientEmail = addslashes(trim($_POST['email']));
     $subject = addslashes(trim($_POST['subject']));
     $message = addslashes(trim($_POST['message']));
-    $antispam = addslashes(trim($_POST['antispam']));
 
-    $array = array('emailMessage' => '', 'subjectMessage' => '', 'messageMessage' => '', 'antispamMessage' => '');
+    $array = array('emailMessage' => '', 'subjectMessage' => '', 'messageMessage' => '');
 
     if(!isEmail($clientEmail)) {
         $array['emailMessage'] = 'Invalid email!';
@@ -26,10 +25,7 @@ if($_POST) {
     if($message == '') {
         $array['messageMessage'] = 'Empty message!';
     }
-    if($antispam != '12') {
-    	$array['antispamMessage'] = 'Wrong antispam answer!';
-    }
-    if(isEmail($clientEmail) && $subject != '' && $message != '' && $antispam == '12') {
+    if(isEmail($clientEmail) && $subject != '' && $message != '') {
         // Send email
 		$headers = "From: " . $clientEmail . " <" . $clientEmail . ">" . "\r\n" . "Reply-To: " . $clientEmail;
 		mail($emailTo, $subject . " (bootstrap contact form tutorial)", $message, $headers);
