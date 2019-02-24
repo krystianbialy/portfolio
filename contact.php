@@ -1,5 +1,5 @@
 <?php
-
+ header("refresh: 3;");
 // Email address verification
 function isEmail($email) {
 	return filter_var($email, FILTER_VALIDATE_EMAIL);
@@ -7,7 +7,6 @@ function isEmail($email) {
 
 if($_POST) {
 
-    // Enter the email where you want to receive the message
     $emailTo = 'krystian.bialy@onet.pl';
 
     $clientEmail = addslashes(trim($_POST['email']));
@@ -27,11 +26,14 @@ if($_POST) {
     }
     if(isEmail($clientEmail) && $subject != '' && $message != '') {
         // Send email
-		$headers = "From: " . $clientEmail . " <" . $clientEmail . ">" . "\r\n" . "Reply-To: " . $clientEmail;
-		mail($emailTo, $subject . " (bootstrap contact form tutorial)", $message, $headers);
-    }
+
+		$headers = "From: " . $clientEmail . "\r\n" . "Content-Type: text/html; charset=utf-8\r\n";
+		mail($emailTo, $subject, $message, $headers);
+
+		}
 
     echo json_encode($array);
+
 
 }
 

@@ -4,11 +4,29 @@ $(document).ready(function() {
 
     var target = $($(this).attr('href'));
 
+    if (window.innerWidth > 767) {
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: target.offset().top - 60
+      }, 1000);
+    } else {
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: target.offset().top - 200
+      }, 1000);
+    }
+
+  });
+
+  $('a[href^="#skok"]').on('click', function(event) {
+
+    var target = $($(this).attr('href'));
+
     if (target.length) {
       event.preventDefault();
       $('html, body').animate({
-        scrollTop: target.offset().top -160
-      }, 1000);
+        scrollTop: target.offset().top
+      }, 500);
     }
   });
 
@@ -50,15 +68,6 @@ $(document).ready(function() {
     }
   });
 
-  $(function() {
-    $('a[href*=#skok]').on('click', function(e) {
-      e.preventDefault();
-      $('html, body').animate({
-        scrollTop: $($(this).attr('href')).offset().top
-      }, 500, 'linear');
-    });
-  });
-
   ScrollReveal().reveal('.t1', {
     reset: true,
     delay: 300,
@@ -96,7 +105,3 @@ $(document).ready(function() {
     delay: 1300,
     distance: 0,
   });
-
-
-
-});
