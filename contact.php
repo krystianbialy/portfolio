@@ -1,5 +1,5 @@
 <?php
- header("refresh: 3;");
+ 
 // Email address verification
 function isEmail($email) {
 	return filter_var($email, FILTER_VALIDATE_EMAIL);

@@ -83,6 +83,37 @@ a {
   border-radius: 50%;
 }
 
+@media (max-width: 767px) {
+  #aboutme {
+    margin: 0 0 !important;
+    padding: 50px 0 !important;
+
+
+  }
+
+  #aboutme img {
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  #skills {
+    padding-top: 50px !important;
+    padding-bottom: 40px !important;
+
+  }
+}
+
+@media (max-width: 767px) {
+  #portfolio {
+    padding-top: 50px !important;
+    padding-bottom: 20px !important;
+  }
+}
+
+
+
+
 h1 {
   font-size: 3.5rem;
 }
@@ -175,10 +206,6 @@ h3 {
   padding: 80px 0;
 }
 
-.mfp-img {
-  max-height: 800px !important;
-}
-
 .gallery img {
   -webkit-transform: scale(1);
   transform: scale(1);
@@ -192,7 +219,14 @@ h3 {
   z-index: 1;
 }
 
-#contact {
+@media (max-width: 767px) {
+  .gallery img:hover {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.contact {
   background-color: #F0EDE5;
 }
 

@@ -31,6 +31,7 @@ $(document).ready(function() {
   });
 
   $('.view').magnificPopup({
+
     type: 'image',
     gallery: {
       enabled: true
@@ -39,7 +40,7 @@ $(document).ready(function() {
     image: {
       titleSrc: 'title',
       titleSrc: function(item) {
-        return item.el.attr('title') + '<small>by Kowalski</small>';
+        return item.el.attr('title') + '<small>by Krystian Biały</small>';
       }
     }
 
@@ -105,3 +106,16 @@ $(document).ready(function() {
     delay: 1300,
     distance: 0,
   });
+
+  $('#btn').on('click', function() {
+    $('[type="submit"]').prop('disabled', true);
+    setTimeout(function() {
+      $('[type="submit"]').prop('disabled', false);
+    }, 3000); // 3 seconds
+  });
+
+
+
+
+
+});

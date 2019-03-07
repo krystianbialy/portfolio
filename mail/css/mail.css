@@ -71,6 +71,6 @@ img { max-width: 100%; }
 
 @media (max-width: 767px) {
 
-	.inner-bg { padding: 40px 0 100px 0; }
+	.inner-bg { padding: 10px 0 20px 0; }
 
 }
