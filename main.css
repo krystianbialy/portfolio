@@ -1,5 +1,5 @@
 #header {
-  background-image: url(tło.jpg);
+  background-image: url(img/header_background/header_bg.jpg);
   padding-top: 80px;
   padding-bottom: 140px;
   color: white;
@@ -184,18 +184,6 @@ h3 {
   border-bottom: 2px solid black;
 }
 
-.progress {
-  height: 20px;
-}
-
-.briefcase {
-  padding: 5px !important;
-}
-
-.thumbtack {
-  margin-top: 40px;
-}
-
 .gallery img {
   width: 300px ;
   height: auto;
@@ -330,7 +318,7 @@ section.module.parallax {
 }
 
 section.module.parallax-1 {
-  background-image: url(tłoparallax.png);
+  background-image: url(img/parallax/code.jpg);
 }
 
 @media only screen and (max-width: 767px) {
