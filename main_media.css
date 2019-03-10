@@ -1,0 +1,103 @@
+/***** MEDIA QUERIES *****/
+/* html */
+@media (max-width: 900px) {
+
+  html,
+  body {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+
+  html,
+  body {
+    font-size: 13px;
+  }
+}
+
+/* header */
+@media (min-height: 850px) {
+  .header {
+    padding-top: 140px;
+  }
+}
+
+@media (min-height: 950px) {
+  .header {
+    padding-top: 180px;
+  }
+}
+
+@media (min-height: 1030px) {
+  .header {
+    padding-top: 210px;
+  }
+}
+
+/* navbar */
+@media (min-width: 768px) {
+  .nav-item .nav-link:hover {
+    background: #fff;
+    color: #000 !important;
+  }
+}
+
+/* aboutme */
+@media (max-width: 767px) {
+  .aboutme {
+    margin: 0 0 !important;
+    padding: 50px 0 !important;
+  }
+
+  .aboutme img {
+    padding-top: 0px;
+  }
+
+  .pulse {
+    margin: 0 0 !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .one {
+    order: 2;
+  }
+
+  .two {
+    order: 1;
+  }
+
+  .three {
+    order: 3;
+  }
+}
+
+/* skills */
+@media (max-width: 767px) {
+  .skills {
+    padding-top: 50px !important;
+    padding-bottom: 40px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .technologies {
+    padding: 0px 0px !important;
+  }
+}
+
+/* portfolio */
+@media (max-width: 767px) {
+  .portfolio {
+    padding-top: 50px !important;
+    padding-bottom: 20px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .gallery img:hover {
+    -webkit-transform: none;
+    transform: none;
+  }
+}

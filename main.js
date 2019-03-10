@@ -18,7 +18,7 @@ $(document).ready(function() {
 
   });
 
-  $('a[href^="#skok"]').on('click', function(event) {
+  $('a[href^="#navigation"]').on('click', function(event) {
 
     var target = $($(this).attr('href'));
 
@@ -50,15 +50,15 @@ $(document).ready(function() {
 
   // ===== Scroll to Top ====
   $(window).scroll(function() {
-    if ($(this).scrollTop() >= 550) { // If page is scrolled more than 50px
-      $('#return-to-top').fadeIn(10); // Fade in the arrow
+    if ($(this).scrollTop() >= 550) {
+      $('#return-to-top').fadeIn(10);
     } else {
-      $('#return-to-top').fadeOut(10); // Else fade out the arrow
+      $('#return-to-top').fadeOut(10);
     }
   });
-  $('#return-to-top').click(function() { // When arrow is clicked
+  $('#return-to-top').click(function() {
     $('body,html').animate({
-      scrollTop: 0 // Scroll to top of body
+      scrollTop: 0
     }, 1000);
   });
 
@@ -69,39 +69,39 @@ $(document).ready(function() {
     }
   });
 
-  ScrollReveal().reveal('.t1', {
+  ScrollReveal().reveal('.tech1', {
     reset: true,
     delay: 300,
     distance: 0,
 
   });
 
-  ScrollReveal().reveal('.t2', {
+  ScrollReveal().reveal('.tech2', {
     reset: true,
     delay: 500,
     distance: 0,
 
   });
 
-  ScrollReveal().reveal('.t3', {
+  ScrollReveal().reveal('.tech3', {
     reset: true,
     delay: 700,
     distance: 0,
   });
 
-  ScrollReveal().reveal('.t4', {
+  ScrollReveal().reveal('.tech4', {
     reset: true,
     delay: 900,
     distance: 0,
   });
 
-  ScrollReveal().reveal('.t5', {
+  ScrollReveal().reveal('.tech5', {
     reset: true,
     delay: 1100,
     distance: 0,
   });
 
-  ScrollReveal().reveal('.t6', {
+  ScrollReveal().reveal('.tech6', {
     reset: true,
     delay: 1300,
     distance: 0,

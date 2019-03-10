@@ -1,85 +1,92 @@
 <!DOCTYPE html>
+
 <html lang="pl-PL" dir="ltr">
 
+<!-- HEAD -->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-Ua-Compatible" content="IE=edge">
-  <title>K. Biały- CV & Portfolio</title>
+  <title>K. Biały- Portfolio</title>
   <link rel="stylesheet" href="bootstrap_css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&amp;subset=latin-ext">
   <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="main_media.css" />
+  <link rel="stylesheet" href="fontawesome/css/all.css" />
+  <link rel="stylesheet" href="animate_css/animate.css" />
+  <link rel="stylesheet" href="gallery_css_js/css/magnific-popup.css" />
   <link rel="stylesheet" href="mail_css_js/css/mail.css" />
   <link rel="stylesheet" href="mail_css_js/css/form-elements.css" />
-  <link rel="stylesheet" href="fontawesome/css/all.css" />
-  <link rel="stylesheet" href="gallery_css_js/css/magnific-popup.css" />
-  <link rel="stylesheet" href="animate_css/animate.css" />
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
 </head>
 
-
+<!-- BODY -->
 <body>
 
-  <section class="scroll" id="header">
-    <div class="container max">
-      <div class="row">
-        <div class="col-12 col-sm-10 mx-auto my-auto text-center">
-          <h1>Krystian Biały</h1>
-          <p>
-            Junior Front-end Developer
-          </p>
-          <div class="contact-top">
-            <i class="fas fa-1x fa-envelope pt-3 mt-3 mr-2"></i>
-            <a target="_blank" href="#contact">krystian.bialy@onet.pl</a>
-            </br>
-            <i class="fas fa-1x fa-phone mt-4 mr-2"></i>
-            728 376 556
-            </br>
-            <i class="fab fa-1x fa-github mt-4 mr-2"></i>
-            <a target="_blank" href="https://github.com/krystianbialy">krystianbialy</a>
-          </div>
-          <div class="more">
-            <i class="fas fa-3x fa-hand-point-down animated infinite fadeOutDown slower"></i>
-            </br></br></br></br>
-            <a class="section03" href="#skok">Zobacz więcej !</a>
+  <!-- HEADER SECTION -->
+  <section id="_header">
+    <div class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-10 mx-auto my-auto text-center">
+            <h1>Krystian Biały</h1>
+            <p>
+              Junior Front-end Developer
+            </p>
+            <div class="contact-top">
+              <i class="fas fa-1x fa-envelope pt-3 mt-3 mr-2"></i>
+              <a target="_blank" href="#contact">krystian.bialy@onet.pl</a>
+              </br>
+              <i class="fas fa-1x fa-phone mt-4 mr-2"></i>
+              728 376 556
+              </br>
+              <i class="fab fa-1x fa-github mt-4 mr-2"></i>
+              <a target="_blank" href="https://github.com/krystianbialy">krystianbialy</a>
+            </div>
+            <div class="look_more">
+              <i class="fas fa-hand-point-down animated infinite fadeOutDown slower"></i>
+              </br></br></br></br>
+              <a href="#navigation">Zobacz więcej !</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <header class="sticky-top scroll" id="skok">
-    <nav class="navbar navbar-dark bg-dark navbar-expand-md">
-      <div class="container top">
-        <a class="navbar-brand" href="#header">Krystian Biały<i class="fas fa-arrow-up ml-5 d-sm-none d-inline-block"></i></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="przełącznik nawigacji">
+  <!-- NAVIGATION -->
+  <nav id="navigation" class="sticky-top">
+    <nav class="navbar navbar-dark navbar-expand-md">
+      <div class="container">
+        <a class="navbar-brand" href="#_header">Krystian Biały<i class="fas fa-arrow-up ml-5 d-sm-none d-inline-block"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_menu" aria-controls="nav_menu" aria-expanded="false" aria-label="przełącznik nawigacji">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="mainmenu">
+        <div class="collapse navbar-collapse" id="nav_menu">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#aboutme">O mnie</a>
+              <a class="nav-link" href="#_aboutme">O mnie</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#skills">Umiejętności</a>
+              <a class="nav-link" href="#_skills">Umiejętności</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Projekty</a>
+              <a class="nav-link" href="#_portfolio">Projekty</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#my_contact">Kontakt</a>
+              <a class="nav-link" href="#_contact">Kontakt</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-  </header>
+  </nav>
 
-
-  <section id="aboutme">
-    <section class="module content">
+  <!-- ABOUT ME SECTION -->
+  <section id="_aboutme">
+    <div class="aboutme module">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-6 col-lg-7 text-center dwa">
+          <div class="col-12 col-md-6 col-lg-7 text-center one">
             <h2 class="mb-4">Cześć!</h2>
             <p class="mb-5">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec faucibus augue, ac lacinia risus. Suspendisse in aliquet metus. Vestibulum nec velit urna. Vestibulum ornare consectetur tellus, sed dignissim est congue
@@ -88,99 +95,105 @@
               felis a, cursus ex. Suspendisse vitae convallis ligula. Nulla vulputate faucibus nulla, eget finibus quam vulputate at. Sed eu vulputate metus. Maecenas a imperdiet nibh. Sed eu lectus auctor, efficitur felis a, cursus purus.
             </p>
           </div>
-          <div class="col-12 col-md-6 col-lg-5 text-center jeden">
+          <div class="col-12 col-md-6 col-lg-5 text-center two">
             <img src="img/my_photo/myphoto.png" />
           </div>
           <div class="w-100"></div>
-          <div class="col-12 text-center trzy">
-            <a class="btn btn-primary btn-xl mt-5 animated infinite pulse" href="download/CV Krystian Biały.docx">Pobierz moje CV (PDF)</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </section>
-
-  <section class="module parallax parallax-1 d-none d-sm-block">
-    <div class="container parallax"></div>
-  </section>
-
-  <section id="skills">
-    <section class="module content">
-      <div class="container">
-        <div class="row">
-          <div class="col-10 mx-auto text-center">
-            <h4>Technologie których używam na co dzień</h4>
-          </div>
-          <div class="line col-11 col-sm-8 mx-auto text-ceter mt-3"></div>
-          <div class="row col-12 mt-4 mb-4 mx-auto text-center">
-            <div class="tech t1 col-6 col-md-2 mt-5">
-              <img src="img/technologies/html_logo.png" />
-            </div>
-            <div class="tech t2 col-6 col-md-2 mt-5">
-              <img src="img/technologies/css3_logo.png" />
-            </div>
-            <div class="tech t3 col-6 col-md-2 mt-5">
-              <img src="img/technologies/js_logo.png" />
-            </div>
-            <div class="tech t4 col-6 col-md-2 mt-5">
-              <img src="img/technologies/jquery_logo.png" />
-            </div>
-            <div class="tech t5 col-6 col-md-2 mt-5">
-              <img src="img/technologies/bootstrap_logo.png" />
-            </div>
-            <div class="tech t6 col-6 col-md-2 mt-5">
-              <img src="img/technologies/git_logo.png" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </section>
-
-  <section id="portfolio">
-    <div class="container">
-      <div class="row">
-        <div class="col-6 mx-auto text-center">
-          <h6>Projekty</h6>
-        </div>
-      </div>
-      <div class="line col-12 col-sm-8 mx-auto text-ceter mt-3"></div>
-      <div class="row mt-5 mb-5">
-        <div class="col-10 mx-auto text-center col-md-6 col-lg-3 mt-3">
-          <div class="gallery">
-            <a class="view" title="I projekt" href="img/projects/1_project.png"><img src="img/projects/1_project.png" alt="I projekt" /></a>
-          </div>
-        </div>
-        <div class="col-10 mx-auto text-center col-md-6 col-lg-3 mt-3">
-          <div class="gallery">
-            <a class="view" title="II projekt" href="img/projects/2_project.png"><img src="img/projects/2_project.png" alt="II projekt" /></a>
-          </div>
-        </div>
-        <div class="col-10 mx-auto text-center col-md-6 col-lg-3 mt-3">
-          <div class="gallery">
-            <a class="view" title="III projekt" href="img/projects/3_project.png"><img src="img/projects/3_project.png" alt="III projekt" /></a>
-          </div>
-        </div>
-        <div class="col-10 mx-auto text-center col-md-6 col-lg-3 mt-3">
-          <div class="gallery">
-            <a class="view" title="IV projekt" href="img/projects/4_project.png"><img src="img/projects/4_project.png" alt="IV projekt" /></a>
+          <div class="col-12 text-center three">
+            <a class="btn btn-primary mt-5 animated infinite pulse" href="download/CV Krystian Biały.docx">Pobierz moje CV (PDF)</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="contact" id="my_contact">
-    <div class="inner-bg">
+  <!-- PARALLAX -->
+  <div class="module parallax parallax-1 d-none d-sm-block">
+    <div class="container parallax"></div>
+  </div>
+
+  <!-- SKILLS SECTION -->
+  <section id="_skills">
+    <div class="skills module">
+      <div class="container">
+        <div class="row">
+          <div class="col-10 mx-auto text-center">
+            <h2>Technologie których używam na co dzień</h2>
+          </div>
+          <div class="line col-11 col-sm-8 mt-3 mx-auto text-ceter"></div>
+          <div class="row col-12 mt-4 mb-4 mx-auto text-center">
+            <div class="technologies tech1 col-6 col-md-2 mt-5">
+              <img src="img/technologies/html_logo.png" />
+            </div>
+            <div class="technologies tech2 col-6 col-md-2 mt-5">
+              <img src="img/technologies/css3_logo.png" />
+            </div>
+            <div class="technologies tech3 col-6 col-md-2 mt-5">
+              <img src="img/technologies/js_logo.png" />
+            </div>
+            <div class="technologies tech4 col-6 col-md-2 mt-5">
+              <img src="img/technologies/jquery_logo.png" />
+            </div>
+            <div class="technologies tech5 col-6 col-md-2 mt-5">
+              <img src="img/technologies/bootstrap_logo.png" />
+            </div>
+            <div class="technologies tech6 col-6 col-md-2 mt-5">
+              <img src="img/technologies/git_logo.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO SECTION -->
+  <section id="_portfolio">
+    <div class="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 mx-auto text-center">
+            <h2>Projekty</h2>
+          </div>
+        </div>
+        <div class="line col-12 col-sm-8 mx-auto text-ceter mt-3"></div>
+        <div class="row mt-5 mb-5">
+          <div class="col-10 col-md-6 col-lg-3 mx-auto text-center mt-3">
+            <div class="gallery">
+              <a class="view" title="I projekt" href="img/projects/1_project.png"><img src="img/projects/1_project.png" alt="I projekt" /></a>
+            </div>
+          </div>
+          <div class="col-10 col-md-6 col-lg-3 mx-auto text-center mt-3">
+            <div class="gallery">
+              <a class="view" title="II projekt" href="img/projects/2_project.png"><img src="img/projects/2_project.png" alt="II projekt" /></a>
+            </div>
+          </div>
+          <div class="col-10 col-md-6 col-lg-3 mx-auto text-center mt-3">
+            <div class="gallery">
+              <a class="view" title="III projekt" href="img/projects/3_project.png"><img src="img/projects/3_project.png" alt="III projekt" /></a>
+            </div>
+          </div>
+          <div class="col-10 col-md-6 col-lg-3 mx-auto text-center mt-3">
+            <div class="gallery">
+              <a class="view" title="IV projekt" href="img/projects/4_project.png"><img src="img/projects/4_project.png" alt="IV projekt" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="_contact">
+    <div class="contact inner-bg">
       <div class="container">
         <div class="row">
           <div class="col-6 mx-auto text-center mt-5">
-            <h6>Kontakt</h6>
+            <h2>Kontakt</h2>
           </div>
         </div>
         <div class="line col-12 col-sm-8 mx-auto text-ceter mt-3"></div>
         <div class="row">
-          <div class="col-12 col-sm-10 mx-auto form-box">
+          <div class="form-box col-12 col-sm-10 mx-auto">
             <div class="form-bottom contact-form">
               <form role="form" action="contact.php" method="post">
                 <div class="form-group">
@@ -204,7 +217,8 @@
     </div>
   </section>
 
-  <section id="footer">
+  <!-- FOOTER -->
+  <div class="footer">
     <div class="container">
       <div class="row">
         <div class="col sm-6">
@@ -214,28 +228,28 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
+  <!-- SOCIAL MEDIA ICON-BAR -->
   <div class="icon-bar d-none d-sm-block">
     <a target="_blank" href="https://www.linkedin.com/in/krystian-bia%C5%82y-a78923175/" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
     <a target="_blank" href="https://github.com/krystianbialy" class="github"><i class="fab fa-github"></i></a>
   </div>
 
-  <div class="returntotop d-none d-sm-block">
+  <!-- RETURN TO TOP -->
+  <div class="return_to_top d-none d-sm-block">
     <a href="javascript:" id="return-to-top"><i class="fas fa-arrow-up d-none d-sm-block"></i></a>
   </div>
 
-
+  <!-- SCRIPT JS -->
   <script src="bootstrap_js/jquery-3.3.1.min.js"></script>
   <script src="bootstrap_js/popper.min.js"></script>
   <script src="bootstrap_js/bootstrap.min.js"></script>
   <script src="main.js"></script>
+  <script src="scrollreveal_js/scrollreveal.min.js"></script>
   <script src="gallery_css_js/js/jquery.magnific-popup.min.js"></script>
   <script src="mail_css_js/js/jquery.backstretch.min.js"></script>
   <script src="mail_css_js/js/scripts.js"></script>
-  <script src="scrollreveal_js/scrollreveal.min.js"></script>
-
-
 
 </body>
 

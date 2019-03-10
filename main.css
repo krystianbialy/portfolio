@@ -1,124 +1,36 @@
-#header {
-  background-image: url(img/header_background/header_bg.jpg);
-  padding-top: 80px;
-  padding-bottom: 140px;
-  color: white;
-  min-height: 100vh;
-  width: 100%;
-  margin: auto;
-}
-
-@media (min-height: 850px) {
-  #header {
-    padding-top: 140px;
-  }
-}
-
-@media (min-height: 950px) {
-  #header {
-    padding-top: 180px;
-  }
-}
-@media (min-height: 1030px) {
-  #header {
-    padding-top: 210px;
-  }
-}
-
-html {
+/***** UNIVERSAL STYLES *****/
+html,
+body {
+  font-family: 'Lato', sans-serif;
   font-size: 17px;
 }
 
-@media (max-width: 900px) {
-  html {
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 400px) {
-  html {
-    font-size: 13px;
-  }
-}
-
-body {
-  font-family: 'Lato', sans-serif;
-  min-height: 100vh;
+h2 {
+  font-size: 30px;
 }
 
 a {
   outline: none;
 }
 
-.pulse {
-  background-color: #006E6D;
-  border-color: #006E6D;
+.line {
+  border-bottom: 2px solid #000;
 }
 
-.pulse:hover {
-  background-color: #00A591;
-  border-color: #00A591;
+/***** HEADER STYLE *****/
+.header {
+  background-image: url(img/header_background/header_bg.jpg);
+  padding-top: 80px;
+  padding-bottom: 140px;
+  color: #fff;
+  min-height: 100vh;
 }
-
-.navbar {
-  background-color: #005960 !important;
-}
-
-.nav-item .nav-link {
-  color: white !important;
-  font-size: 20px;
-}
-
-@media (min-width: 768px) {
-  .nav-item .nav-link:hover {
-    background: white;
-    color: black !important;
-  }
-}
-
-#aboutme img {
-  width: 80%;
-  height: auto;
-  padding: 20px 0;
-  border-radius: 50%;
-}
-
-@media (max-width: 767px) {
-  #aboutme {
-    margin: 0 0 !important;
-    padding: 50px 0 !important;
-
-
-  }
-
-  #aboutme img {
-    padding-top: 0px;
-  }
-}
-
-@media (max-width: 767px) {
-  #skills {
-    padding-top: 50px !important;
-    padding-bottom: 40px !important;
-
-  }
-}
-
-@media (max-width: 767px) {
-  #portfolio {
-    padding-top: 50px !important;
-    padding-bottom: 20px !important;
-  }
-}
-
-
-
 
 h1 {
   font-size: 3.5rem;
 }
 
-.scroll p {
+.header p {
   font-size: 2rem;
 }
 
@@ -126,75 +38,109 @@ h1 {
   font-size: 1.4rem;
 }
 
+.contact-top a {
+  color: #fff !important;
+}
+
+.look_more a {
+  font-size: 1.4rem;
+  color: #fff !important;
+}
+
+.look_more a:hover {
+  color: #FF0000 !important;
+}
+
 .fa-hand-point-down {
   margin-top: 25px;
-  font-size: 3vmin;
+  font-size: 3.1rem;
 }
 
-.more a {
-  font-size: 1.4rem;
-  color: white !important;
+/***** NAVBAR STYLE *****/
+.navbar {
+  background-color: #005960;
 }
 
-.more a:hover {
-  color: red !important;
-}
-
-.contact-top a {
-  color: white !important;
+.nav-item .nav-link {
+  color: #fff !important;
+  font-size: 20px;
 }
 
 .navbar-brand {
   font-size: 23px;
 }
 
-h2,
-h4,
-h5,
-h6 {
-  font-size: 30px;
+.sticky-top {
+  z-index: 2015;
 }
 
-#aboutme {
+/***** ABOUTME STYLE *****/
+.aboutme {
   margin: 40px 0;
   padding: 100px 0;
 }
 
-h3 {
-  font-size: 20px;
+.aboutme p {
+  font-size: 17px;
 }
 
-#skills {
+.aboutme img {
+  width: 80%;
+  height: auto;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+.pulse {
+  background-color: #006E6D;
+  border-color: #006E6D;
+  font-size: 16px;
+}
+
+.pulse:hover {
+  background-color: #00A591;
+  border-color: #00A591;
+}
+
+/***** PARALLAX STYLE *****/
+div.container.parallax {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+div.module.parallax {
+  height: 250px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+div.module.parallax-1 {
+  background-image: url(img/parallax/code.jpg);
+}
+
+/***** SKILLS STYLE *****/
+.skills {
   background-color: #F0EDE5;
   padding: 80px 0;
 }
 
-.tech img {
+.technologies img {
   width: auto;
   height: 80px;
 }
 
-@media (max-width: 768px) {
-  .tech {
-    padding: 0px 0px !important;
-  }
-}
-
-.line {
-  border-bottom: 2px solid black;
-}
-
-.gallery img {
-  width: 300px ;
-  height: auto;
-}
-
-#portfolio {
-  background-color: white;
+/***** PORTFOLIO STYLE *****/
+.portfolio {
+  background-color: #fff;
   padding: 80px 0;
 }
 
 .gallery img {
+  width: 300px;
+  height: auto;
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: .3s ease-in-out;
@@ -204,71 +150,67 @@ h3 {
 .gallery img:hover {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
-  z-index: 1;
+  z-index: 20;
 }
 
-@media (max-width: 767px) {
-  .gallery img:hover {
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
+/***** CONTACT STYLE *****/
 .contact {
   background-color: #F0EDE5;
 }
 
-#footer {
+/***** FOOTER STYLE *****/
+.footer {
   background-color: #005960;
 }
 
-#footer p {
-  font-size: 20px;
-  color: white;
+.footer p {
+  font-size: 19px;
+  color: #fff;
   padding-top: 20px;
   padding-bottom: 10px;
 }
 
+/***** SOCIAL MEDIA ICON-BAR STYLE *****/
 .icon-bar {
   position: fixed;
-  z-index: 2000;
+  z-index: 2020;
   top: 44%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
-/* Style the icon bar links */
 .icon-bar a {
   display: block;
   text-align: center;
   padding: 16px;
   transition: all 0.3s ease;
-  color: white !important;
+  color: #fff !important;
   font-size: 20px;
 }
 
-/* Style the social media icons with color, if you want */
 .icon-bar a:hover {
   background-color: #000;
-  color: white;
+  color: #fff;
 }
 
 .linkedin {
   background: #007bb5;
-  color: white;
+  color: #fff;
 }
 
 .github {
-  background: grey;
-  color: white;
+  background: #808080;
+  color: #fff;
 }
 
+/***** RETURN TO TOP STYLE *****/
 #return-to-top {
   position: fixed;
+  z-index: 10;
   bottom: 20px;
   right: 20px;
-  background: rgb(0, 0, 0);
+  background: #000;
   background: rgba(0, 0, 0, 0.6);
   width: 50px;
   height: 50px;
@@ -286,6 +228,7 @@ h3 {
   color: #fff;
   margin: 0;
   position: relative;
+  z-index: 10;
   left: 16px;
   top: 13px;
   font-size: 19px;
@@ -298,39 +241,10 @@ h3 {
 
 #return-to-top:hover {
   background: rgba(0, 0, 0, 0.9);
+  z-index: 30;
 }
 
 #return-to-top:hover i {
   color: #fff;
-}
-
-div.container.parallax {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-section.module.parallax {
-  height: 250px;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-section.module.parallax-1 {
-  background-image: url(img/parallax/code.jpg);
-}
-
-@media only screen and (max-width: 767px) {
-  .dwa {
-    order: 2;
-  }
-
-  .jeden {
-    order: 1;
-  }
-
-  .trzy {
-    order: 3;
-  }
+  z-index: 30;
 }
