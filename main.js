@@ -107,13 +107,6 @@ $(document).ready(function() {
     distance: 0,
   });
 
-  $('#btn').on('click', function() {
-    $('[type="submit"]').prop('disabled', true);
-    setTimeout(function() {
-      $('[type="submit"]').prop('disabled', false);
-    }, 3000); // 3 seconds
-  });
-
 
 
 

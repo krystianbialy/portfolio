@@ -7,6 +7,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-Ua-Compatible" content="IE=edge">
+  <meta name="author" content="Biały Krystian">
+  <meta name="description" content="Kilka słów o mnie, moje umiejętnośći, projekty, kontakt.">
   <title>K. Biały- Portfolio</title>
   <link rel="stylesheet" href="bootstrap_css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&amp;subset=latin-ext">
@@ -34,7 +36,7 @@
             </p>
             <div class="contact-top">
               <i class="fas fa-1x fa-envelope pt-3 mt-3 mr-2"></i>
-              <a target="_blank" href="#contact">krystian.bialy@onet.pl</a>
+              <a href="#_contact">krystian.bialy@onet.pl</a>
               </br>
               <i class="fas fa-1x fa-phone mt-4 mr-2"></i>
               728 376 556
@@ -100,7 +102,7 @@
           </div>
           <div class="w-100"></div>
           <div class="col-12 text-center three">
-            <a class="btn btn-primary mt-5 animated infinite pulse" href="download/CV Krystian Biały.docx">Pobierz moje CV (PDF)</a>
+            <a class="btn mt-5 animated infinite pulse" href="download/CV Krystian Biały.docx">Pobierz moje CV (PDF)</a>
           </div>
         </div>
       </div>
@@ -196,19 +198,22 @@
           <div class="form-box col-12 col-sm-10 mx-auto">
             <div class="form-bottom contact-form">
               <form role="form" action="contact.php" method="post">
-                <div class="form-group">
+                <span class="warning">
+                  Wymagane jest wypełnienie wszystkich pól! W przeciwnym razie przycisk wysłania wiadomośći będzie nieaktywny.
+                </span>
+                <div class="form-group mt-4">
                   <label class="sr-only" for="contact-email">Email</label>
-                  <input type="text" name="email" placeholder="Twój mail" class="contact-email form-control" id="contact-email">
+                  <input type="text" maxlength="100" name="email" placeholder="Twój mail" class="contact-email form-control" id="contact-email">
                 </div>
                 <div class="form-group">
                   <label class="sr-only" for="contact-subject">Subject</label>
-                  <input type="text" name="subject" placeholder="temat" class="contact-subject form-control" id="contact-subject">
+                  <input type="text" maxlength="150" name="subject" placeholder="temat" class="contact-subject form-control" id="contact-subject">
                 </div>
                 <div class="form-group">
                   <label class="sr-only" for="contact-message">Message</label>
-                  <textarea name="message" placeholder="wiadomość" class="contact-message form-control" id="contact-message"></textarea>
+                  <textarea name="message" maxlength="2000" placeholder="wiadomość" class="contact-message form-control" id="contact-message"></textarea>
                 </div>
-                <button id="btn" type="submit" class="btn">Wyślij wiadomość</button>
+                <input id="_submit" class="submit" type="submit" value="Wyślij" />
               </form>
             </div>
           </div>

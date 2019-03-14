@@ -1,13 +1,22 @@
-jQuery(document).ready(function() {
+$(document).ready(function() {
 
-  /*
-      Fullscreen background
-  */
-  $.backstretch("lokalizacja zdjecia");
+  $('#_submit').prop('disabled', true);
 
-  /*
-	    Contact form
-	*/
+  $('#contact-email, #contact-subject, #contact-message').keyup(function() {
+    if ($('#contact-email').val() != '' && $('#contact-subject').val() != '' && $('#contact-message').val() != '') {
+      $('#_submit').prop('disabled', false);
+    } else {
+      $('#_submit').prop('disabled', true);
+    }
+  });
+
+  $("form").submit(function() {
+    $("input[type='submit']").attr("disabled", true).val("Proszę czekać...");
+    setTimeout(function() {
+      $("input[type='submit']").attr("disabled", false).val("Wyślij")
+    }, 1000);
+  })
+
   $('.contact-form form input[type="text"], .contact-form form textarea').on('focus', function() {
     $('.contact-form form input[type="text"], .contact-form form textarea').removeClass('input-error');
   });
@@ -16,7 +25,6 @@ jQuery(document).ready(function() {
     $('.contact-form form input[type="text"], .contact-form form textarea').removeClass('input-error');
     var postdata = $('.contact-form form').serialize();
     $.ajax({
-      scriptCharset: "utf-8",
       type: 'POST',
       url: 'contact.php',
       data: postdata,
@@ -33,23 +41,15 @@ jQuery(document).ready(function() {
         }
         if (json.emailMessage == '' && json.subjectMessage == '' && json.messageMessage == '') {
           $('.contact-form form').fadeOut('fast', function() {
-            $('.contact-form').append('<p>Dziękuje za skontaktowanie się ze mną! Postaram się odpowiedzieć jak najszybciej. </p></br><p>Do usłyszenia :)</p>');
+            $('.contact-form').append('<p class="aftersubmit">Wiadomość została wysłana.</br>Za chwilę nastąpi przekierowanie na górę strony.</p></br><div class="loader"></div>');
             $('input').val('');
             $('textarea').val('');
-
-
             setTimeout(function() {
-              window.location.reload(1);
+              location.href = "index.html"
             }, 5000);
-
-
-
-
-
           });
         }
       }
     });
   });
-
 });

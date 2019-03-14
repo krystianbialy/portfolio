@@ -61,6 +61,10 @@ h1 {
   background-color: #005960;
 }
 
+.navbar-toggler {
+  outline: none !important;
+}
+
 .nav-item .nav-link {
   color: #fff !important;
   font-size: 20px;
@@ -82,6 +86,8 @@ h1 {
 
 .aboutme p {
   font-size: 17px;
+  text-align: justify;
+  padding: 0 10px;
 }
 
 .aboutme img {
@@ -94,13 +100,13 @@ h1 {
 
 .pulse {
   background-color: #006E6D;
-  border-color: #006E6D;
+  color: white !important;
   font-size: 16px;
+  box-shadow: none !important;
 }
 
 .pulse:hover {
   background-color: #00A591;
-  border-color: #00A591;
 }
 
 /***** PARALLAX STYLE *****/
