@@ -46,7 +46,7 @@ $(document).ready(function() {
             $('textarea').val('');
             setTimeout(function() {
               location.href = "index.html"
-            }, 5000);
+            }, 5000000);
           });
         }
       }

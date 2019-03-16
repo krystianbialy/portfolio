@@ -63,6 +63,13 @@ input.submit:hover{
 }
 
 @media (max-width: 767px){
+  input.submit {
+		font-size: 18px;
+		padding: 10px 30px;
+		margin-top: 30px;
+		margin-bottom: 10px;
+	}
+
 	input.submit:hover{
 		background: #006E6D;
 	}
@@ -76,6 +83,7 @@ input.submit:hover{
 
 @media (max-width:767px){
 	.aftersubmit {
+		font-size: 17px;
 		margin-top: 0;
 	}
 
@@ -94,6 +102,14 @@ input.submit:hover{
   -webkit-animation: spin 2s linear infinite; /* Safari */
   animation: spin 2s linear infinite;
 }
+
+@media (max-width: 767px) {
+	.loader {
+		width: 45px;
+		height: 45px;
+	}
+}
+
 
 /* Safari */
 @-webkit-keyframes spin {

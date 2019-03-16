@@ -1,5 +1,5 @@
 /***** MEDIA QUERIES *****/
-/* html */
+/* universal */
 @media (max-width: 900px) {
 
   html,
@@ -8,11 +8,15 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 767px) {
 
   html,
   body {
-    font-size: 13px;
+    font-size: 12px;
+  }
+
+  h3 {
+    font-size: 24px;
   }
 }
 
@@ -31,7 +35,7 @@
 
 @media (min-height: 1030px) {
   .header {
-    padding-top: 210px;
+    padding-top: 220px;
   }
 }
 
@@ -43,6 +47,15 @@
   }
 }
 
+@media (max-width: 767px) {
+  .navbar-brand{
+    font-size: 19px;
+  }
+  .nav-item .nav-link {
+    font-size: 17px;
+  }
+}
+
 /* aboutme */
 @media (max-width: 767px) {
   .aboutme {
@@ -50,7 +63,16 @@
     padding: 50px 0 !important;
   }
 
+  h2 {
+    font-size: 23px;
+  }
+
+  .aboutme p {
+    font-size: 16px;
+  }
+
   .aboutme img {
+    width: 65%;
     padding-top: 0px;
   }
 
@@ -85,9 +107,16 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .technologies {
     padding: 0px 0px !important;
+  }
+  .technologies img {
+    height: 65px;
+  }
+
+  .tech {
+    margin-top: 0px !important;
   }
 }
 
@@ -100,8 +129,23 @@
 }
 
 @media (max-width: 767px) {
+  .gallery_projects {
+    margin-top: 25px !important;
+  }
+
+  .gallery img {
+    width: 250px;
+  }
+
   .gallery img:hover {
     -webkit-transform: none;
     transform: none;
+  }
+}
+
+/* footer */
+@media (max-width: 767px) {
+  .footer p {
+    font-size: 17px;
   }
 }
