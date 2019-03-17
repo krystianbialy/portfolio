@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+  //===== SMOOTH SCROLLING =====
   $('a[href^="#"]').on('click', function(event) {
 
     var target = $($(this).attr('href'));
@@ -30,25 +31,21 @@ $(document).ready(function() {
     }
   });
 
+  //===== MAGNIFIC POPUP/PROJECTS =====
   $('.view').magnificPopup({
-
     type: 'image',
     gallery: {
       enabled: true
     },
-
     image: {
       titleSrc: 'title',
       titleSrc: function(item) {
         return item.el.attr('title') + '<small>by Krystian Biały</small>';
       }
     }
-
-
-    // other options
   });
 
-  // ===== Scroll to Top ====
+  // ===== SCROLL TO TOP =====
   $(window).scroll(function() {
     if ($(this).scrollTop() >= 550) {
       $('#return-to-top').fadeIn(10);
@@ -56,31 +53,31 @@ $(document).ready(function() {
       $('#return-to-top').fadeOut(10);
     }
   });
+
   $('#return-to-top').click(function() {
     $('body,html').animate({
       scrollTop: 0
     }, 1000);
   });
 
+  //===== ONCLICK NAVBAR COLLAPSE TOGGLE =====
   $("body").click(function(event) {
-    // only do this if navigation is visible, otherwise you see jump in navigation while collapse() is called
     if ($(".navbar-collapse").is(":visible") && $(".navbar-toggler").is(":visible")) {
       $('.navbar-collapse').collapse('toggle');
     }
   });
 
+  //===== SCROLL REVEAL/SKILLS =====
   ScrollReveal().reveal('.tech1', {
     reset: true,
     delay: 300,
     distance: 0,
-
   });
 
   ScrollReveal().reveal('.tech2', {
     reset: true,
     delay: 500,
     distance: 0,
-
   });
 
   ScrollReveal().reveal('.tech3', {
@@ -106,9 +103,5 @@ $(document).ready(function() {
     delay: 1300,
     distance: 0,
   });
-
-
-
-
 
 });
