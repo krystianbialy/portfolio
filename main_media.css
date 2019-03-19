@@ -21,15 +21,27 @@
 }
 
 /* header */
-@media (min-height: 850px) {
-  .header {
-    padding-top: 140px;
+@media (max-width: 767px) {
+  .look_more a:hover{
+    color: #fff !important;
   }
 }
 
-@media (min-height: 950px) {
+@media (max-height: 667px) {
   .header {
-    padding-top: 180px;
+    padding-top: 55px;
+  }
+}
+
+@media (min-height: 900px) {
+  .header {
+    padding-top: 120px;
+  }
+}
+
+@media (min-height: 980px) {
+  .header {
+    padding-top: 160px;
   }
 }
 
@@ -59,8 +71,9 @@
 /* aboutme */
 @media (max-width: 767px) {
   .aboutme {
-    margin: 0 0 !important;
-    padding: 50px 0 !important;
+    margin: 0 0;
+    padding-top: 40px;
+    padding-bottom: 50px;
   }
 
   h2 {
@@ -73,7 +86,8 @@
 
   .aboutme img {
     width: 65%;
-    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 40px;
   }
 
   .pulse {
@@ -92,10 +106,6 @@
 
   .two {
     order: 1;
-  }
-
-  .three {
-    order: 3;
   }
 }
 
