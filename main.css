@@ -20,10 +20,11 @@ a {
 /***** HEADER STYLE *****/
 .header {
   background-image: url(img/header_background/header_bg.jpg);
-  padding-top: 80px;
+  padding-top: 90px;
   padding-bottom: 140px;
   color: #fff;
   min-height: 100vh;
+  background-size: cover;
 }
 
 h1 {
