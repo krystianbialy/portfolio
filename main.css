@@ -99,7 +99,7 @@ h2 {
 .aboutme img {
   width: 65%;
   height: auto;
-  margin-top: 20px;
+  margin-top: 30px;
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
   -webkit-box-shadow: 15px 15px 12px -1px rgba(0, 0, 0, 0.43);
@@ -166,11 +166,6 @@ div.module.parallax-1 {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
   z-index: 20;
-}
-
-/***** CONTACT STYLE *****/
-.contact {
-  background-color: #F0EDE5;
 }
 
 /***** FOOTER STYLE *****/

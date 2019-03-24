@@ -1,3 +1,8 @@
+/***** CONTACT STYLE *****/
+.contact {
+  background-color: #F0EDE5;
+}
+
 strong { font-weight: 600; }
 
 a, a:hover, a:focus {

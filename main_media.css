@@ -107,6 +107,12 @@
 }
 
 @media (max-width: 1700px) {
+  .aboutme {
+    margin-top: 0px;
+    margin-bottom:50px;
+    padding-top: 75px;
+  }
+
   h2 {
     font-size: 25px;
   }
@@ -127,6 +133,13 @@
 
   .two {
     order: 1;
+  }
+}
+
+/* parallax */
+@media (max-width: 1700px) {
+  div.module.parallax {
+    height: 210px;
   }
 }
 
@@ -196,6 +209,8 @@
 @media (max-width: 1700px) {
   .footer p {
     font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 0px;
   }
 }
 
@@ -209,11 +224,14 @@
 /* return to top */
 @media (max-width: 1700px) {
   #return-to-top {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
+    bottom: 7px;
   }
 
   #return-to-top i {
     font-size: 17px;
+    left: 13px;
+    top: 10px;
   }
 }
