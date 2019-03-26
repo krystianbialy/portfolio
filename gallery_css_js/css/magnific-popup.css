@@ -242,7 +242,7 @@ button::-moz-focus-inner {
 }
 
 .mfp-arrow-left {
-  left: 0;
+  left: 0px;
 }
 
 .mfp-arrow-left:after {
@@ -256,7 +256,7 @@ button::-moz-focus-inner {
 }
 
 .mfp-arrow-right {
-  right: 0;
+  right: 0px;
 }
 
 .mfp-arrow-right:after {
@@ -444,5 +444,45 @@ img.mfp-img {
   .mfp-container {
     padding-left: 6px;
     padding-right: 6px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .mfp-arrow-left {
+    left: 50px;
+  }
+
+  .mfp-arrow-right {
+    right: 50px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .mfp-arrow-left {
+    left: 100px;
+  }
+
+  .mfp-arrow-right {
+    right: 100px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .mfp-arrow-left {
+    left: 200px;
+  }
+
+  .mfp-arrow-right {
+    right: 200px;
+  }
+}
+
+@media (min-width: 1750px) {
+  .mfp-arrow-left {
+    left: 300px;
+  }
+
+  .mfp-arrow-right {
+    right: 300px;
   }
 }

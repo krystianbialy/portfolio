@@ -81,7 +81,8 @@ h1 {
 
 /***** ABOUTME STYLE *****/
 .aboutme {
-  margin: 40px 0;
+  margin-top: 30px;
+  margin-bottom: 50px;
   padding: 100px 0;
 }
 
@@ -154,7 +155,7 @@ div.module.parallax-1 {
 }
 
 .gallery img {
-  width: 300px;
+  width: 260px;
   height: auto;
   -webkit-transform: scale(1);
   transform: scale(1);
@@ -176,8 +177,7 @@ div.module.parallax-1 {
 .footer p {
   font-size: 19px;
   color: #fff;
-  padding-top: 20px;
-  padding-bottom: 8px;
+  padding-top: 17px;
 }
 
 /***** SOCIAL MEDIA ICON-BAR STYLE *****/
@@ -218,7 +218,7 @@ div.module.parallax-1 {
 #return-to-top {
   position: fixed;
   z-index: 10;
-  bottom: 20px;
+  bottom: 10px;
   right: 20px;
   background: #000;
   background: rgba(0, 0, 0, 0.6);

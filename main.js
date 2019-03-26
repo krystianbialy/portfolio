@@ -8,12 +8,12 @@ $(document).ready(function() {
     if (window.innerWidth > 767) {
       event.preventDefault();
       $('html, body').animate({
-        scrollTop: target.offset().top - 60
+        scrollTop: target.offset().top - 55
       }, 1000);
     } else {
       event.preventDefault();
       $('html, body').animate({
-        scrollTop: target.offset().top - 200
+        scrollTop: target.offset().top - 190
       }, 1000);
     }
 
