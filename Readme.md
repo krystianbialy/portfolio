@@ -1,7 +1,7 @@
 ## General info
 My first page build on Bootstrap.
 
-## Technologies
+## Technologies and tools
 Project is created with:
 * HTML5
 * CSS3
@@ -10,9 +10,11 @@ Project is created with:
 * Bootstrap v4.1.3
 * Ajax
 * PHP5
+* Npm v6.9.0
+* Gulp v2.0.1
 
 ## Status
-On the finish.
+Finished
 
 ## Sources
 Header section background image url: https://pixabay.com/pl/illustrations/t%C5%82o-tle-tekstura-design-jasny-874452/

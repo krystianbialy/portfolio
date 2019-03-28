@@ -31,36 +31,7 @@ $(document).ready(function() {
     }
   });
 
-  //===== MAGNIFIC POPUP/PROJECTS =====
-  $('.view').magnificPopup({
-    type: 'image',
-    gallery: {
-      enabled: true
-    },
-    image: {
-      titleSrc: 'title',
-      titleSrc: function(item) {
-        return item.el.attr('title') + '<small>by Krystian Biały</small>';
-      }
-    }
-  });
-
-  // ===== SCROLL TO TOP =====
-  $(window).scroll(function() {
-    if ($(this).scrollTop() >= 550) {
-      $('#return-to-top').fadeIn(10);
-    } else {
-      $('#return-to-top').fadeOut(10);
-    }
-  });
-
-  $('#return-to-top').click(function() {
-    $('body,html').animate({
-      scrollTop: 0
-    }, 1000);
-  });
-
-  //===== ONCLICK NAVBAR COLLAPSE TOGGLE =====
+  //===== ON CLICK NAVBAR COLLAPSE =====
   $("body").click(function(event) {
     if ($(".navbar-collapse").is(":visible") && $(".navbar-toggler").is(":visible")) {
       $('.navbar-collapse').collapse('toggle');
@@ -102,6 +73,44 @@ $(document).ready(function() {
     reset: true,
     delay: 1300,
     distance: 0,
+  });
+
+  //===== MAGNIFIC POPUP/PROJECTS =====
+  $('.view').magnificPopup({
+    type: 'image',
+    gallery: {
+      enabled: true
+    },
+    image: {
+      titleSrc: 'title',
+      titleSrc: function(item) {
+        return item.el.attr('title') + '<small>by Krystian Biały</small>';
+      }
+    }
+  });
+
+  //===== FOOTER/CURRENT DATE =====
+  function getDate() {
+    var today = new Date();
+    var year = today.getFullYear();
+    document.getElementById("currentDate").innerHTML = year;
+  }
+
+  getDate();
+
+  //===== RETURN TO TOP =====
+  $(window).scroll(function() {
+    if ($(this).scrollTop() >= 550) {
+      $('#return-to-top').fadeIn(10);
+    } else {
+      $('#return-to-top').fadeOut(10);
+    }
+  });
+
+  $('#return-to-top').click(function() {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 1000);
   });
 
 });

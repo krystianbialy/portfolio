@@ -32,7 +32,7 @@
 }
 
 @media (max-width: 767px) {
-  .look_more a:hover{
+  .look_more a:hover {
     color: #fff !important;
   }
 }
@@ -51,18 +51,20 @@
 
 /* navbar */
 @media (max-width: 1700px) {
-  .navbar-brand{
+  .navbar-brand {
     font-size: 21px;
   }
+
   .nav-item .nav-link {
     font-size: 18px;
   }
 }
 
 @media (max-width: 767px) {
-  .navbar-brand{
+  .navbar-brand {
     font-size: 19px;
   }
+
   .nav-item .nav-link {
     font-size: 17px;
   }
@@ -79,7 +81,7 @@
 @media (max-width: 1700px) {
   .aboutme {
     margin-top: 0px;
-    margin-bottom:50px;
+    margin-bottom: 50px;
     padding-top: 75px;
   }
 
@@ -104,13 +106,15 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .one { /* aboutme text */
+  .one {
+    /* aboutme text */
     order: 2;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .two {/* aboutme img  */
+  .two {
+    /* aboutme img  */
     order: 1;
     margin-left: auto;
     margin-right: auto;
@@ -126,7 +130,6 @@
     margin-top: 0px;
     margin-bottom: 40px;
   }
-
 }
 
 @media (max-width: 767px) {
@@ -160,16 +163,19 @@
   }
 
   .one {
+    /* aboutme text */
     order: 2;
   }
 
   .two {
+    /* aboutme text */
     order: 1;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-  .two {/* aboutme img  */
+  .two {
+    /* aboutme img  */
     margin-left: auto;
     margin-right: auto;
   }
@@ -195,8 +201,8 @@
 
 @media (max-width: 767px) {
   .skills {
-    padding-top: 50px !important;
-    padding-bottom: 40px !important;
+    padding-top: 50px;
+    padding-bottom: 40px;
   }
 
   .technologies {
@@ -213,10 +219,32 @@
 }
 
 /* portfolio */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .portfolio {
+    padding-bottom: 62px;
+  }
+
+  .P1, .P2, .P3, .P4 {
+    margin-bottom: 32px !important;
+  }
+
+  .P1, .P2, .P3, .P4 {
+    padding: 0 0 !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .P1, .P3 {
+    text-align: right !important;
+  }
+  .P2, .P4 {
+    text-align: left !important;
+  }
+}
+
 @media (max-width: 767px) {
   .portfolio {
-    padding-top: 50px !important;
-    padding-bottom: 20px !important;
+    padding: 50px 0;
   }
 
   .gallery_projects {
@@ -224,12 +252,29 @@
   }
 
   .gallery img {
-    width: 250px;
+    width: 245px;
   }
 
   .gallery img:hover {
     -webkit-transform: none;
     transform: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .portfolio {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+
+  .gallery img {
+    width: 250px;
+  }
+}
+
+@media (max-width: 335px) {
+  .gallery img {
+    width: 100%;
   }
 }
 

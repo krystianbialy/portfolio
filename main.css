@@ -7,10 +7,12 @@ body {
 
 h3 {
   font-size: 30px;
+  line-height: 1.5;
 }
 
-a {
+a, a:hover {
   outline: none;
+  text-decoration: none;
 }
 
 .line {

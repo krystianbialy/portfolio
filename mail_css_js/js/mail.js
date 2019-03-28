@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-//===== SUBMIT DISABLED/ENABLED =====
+  //===== SUBMIT DISABLED/ENABLED =====
   $('#_submit').prop('disabled', true);
 
   $('#contact-email, #contact-subject, #contact-message').keyup(function() {
@@ -15,10 +15,10 @@ $(document).ready(function() {
     $("input[type='submit']").attr("disabled", true).val("Proszę czekać...");
     setTimeout(function() {
       $("input[type='submit']").attr("disabled", false).val("Wyślij")
-    }, 2000);  // << AFTER 2s ENABLED 
+    }, 2000); // << AFTER 2s ENABLED
   })
 
-//===== FORM VALIDATION =====
+  //===== FORM VALIDATION =====
   $('.contact-form form input[type="text"], .contact-form form textarea').on('focus', function() {
     $('.contact-form form input[type="text"], .contact-form form textarea').removeClass('input-error');
   });
@@ -44,9 +44,9 @@ $(document).ready(function() {
         if (json.emailMessage == '' && json.subjectMessage == '' && json.messageMessage == '') {
           $('.contact-form form').fadeOut('fast', function() {
             $('.contact-form').append('<p class="aftersubmit">Wiadomość została wysłana.</br>Za chwilę nastąpi przekierowanie na górę strony.</p></br><div class="loader"></div>');
-            $('input').val('');  // << INPUT RESET AFTER SUBMIT
-            $('textarea').val('');  // << TEXTAREA RESET AFTER SUBMIT
-            setTimeout(function() {  // << RETURN TO TOP AFTER SUBMIT (after 6s)
+            $('input').val(''); // << INPUT RESET AFTER SUBMIT
+            $('textarea').val(''); // << TEXTAREA RESET AFTER SUBMIT
+            setTimeout(function() { // << RETURN TO TOP AFTER SUBMIT (after 6s)
               location.href = "index.html"
             }, 6000);
           });
