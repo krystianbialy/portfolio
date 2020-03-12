@@ -1,11 +1,15 @@
 {
-    "extends": ["airbnb-base/legacy", "prettier"],
-    "plugins": ["prettier"],
-    "rules": {
-        "prettier/prettier": "warn"
-    },
-    "parserOptions": {
-        "ecmaVersion": 2015,
-        "sourceType": "module"
-    }
+  "extends": ["airbnb-base/legacy", "prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+      "prettier/prettier": "warn",
+      "no-unused-vars":"off"
+  },
+  "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+  }
 }
