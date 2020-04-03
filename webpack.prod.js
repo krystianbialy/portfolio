@@ -1,6 +1,5 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
@@ -12,7 +11,7 @@ module.exports = {
     filename: '[name].[contentHash].js'
   },
   optimization: {
-    minimizer: [new TerserPlugin(), new OptimizeCSSAssetsPlugin()]
+    minimizer: [new TerserPlugin()]
   },
   module: {
     rules: [
@@ -31,7 +30,7 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: 'img'
+              outputPath: 'images'
             }
           }
         ]

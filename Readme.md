@@ -4,10 +4,8 @@ Portfolio
 ## Technologies and tools
 Project is created with:
 * HTML5
-* SASS
-* JavaScript
 * React.js v16.13.0
-* BEM
+* Styled Components v5.0.1
 * MobileFirst
 * RWD
 * Yarn v1.22.4
