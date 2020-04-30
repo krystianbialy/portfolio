@@ -1,7 +1,7 @@
 import React from 'react';
-import { Container, MediaIconGitHub, MediaIconLinkedin } from './media.styled';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { Container, MediaIconGitHub, MediaIconLinkedin } from './media.styled';
 
 export const Media = () => {
   return (
