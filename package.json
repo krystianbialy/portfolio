@@ -41,7 +41,7 @@
     "@fortawesome/react-fontawesome": "^0.1.9",
     "clean-webpack-plugin": "^3.0.0",
     "html-webpack-plugin": "^4.2.1",
-    "preload-webpack-plugin": "^2.3.0",
+    "preload-webpack-plugin": "3.0.0-beta.4",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "styled-components": "^5.1.0",
