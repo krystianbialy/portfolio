@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDom from 'react-dom';
+import './theme/fonts.css';
 import { GlobalStyle } from './theme/global';
-import { App } from './app.component';
+import { AppComponent } from './app.component';
 
 const rootElement = document.querySelector('#root');
 
 ReactDom.render(
   <React.StrictMode>
     <GlobalStyle />
-    <App />
+    <AppComponent />
   </React.StrictMode>,
   rootElement
 );

@@ -1,13 +1,13 @@
 import React from 'react';
-import { Container, FooterText } from './footer.styled';
+import { Footer, FooterText } from './footer.styled';
 
-export const Footer = () => {
+export const FooterComponent = () => {
   const today = new Date();
   const year = today.getFullYear();
 
   return (
-    <Container>
+    <Footer>
       <FooterText>&copy; {year} Krystian Biały</FooterText>
-    </Container>
+    </Footer>
   );
 };

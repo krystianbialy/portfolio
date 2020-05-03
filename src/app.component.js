@@ -1,14 +1,14 @@
 import React from 'react';
-import { Information } from './components/information/information.component';
-import { Media } from './components/media/media.component';
-import { Footer } from './components/footer/footer.component';
+import { HeaderComponent } from './components/header/header.component';
+import { InformationComponent } from './components/information/information.component';
+import { FooterComponent } from './components/footer/footer.component';
 
-export const App = () => {
+export const AppComponent = () => {
   return (
     <>
-      <Information />
-      <Media />
-      <Footer />
+      <HeaderComponent />
+      <InformationComponent />
+      <FooterComponent />
     </>
   );
 };

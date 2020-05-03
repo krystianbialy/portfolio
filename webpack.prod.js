@@ -1,6 +1,7 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const PreloadWebpackPlugin = require('preload-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
@@ -8,10 +9,10 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[contentHash].js',
+    filename: '[name].[contentHash].js'
   },
   optimization: {
-    minimizer: [new TerserPlugin()],
+    minimizer: [new TerserPlugin()]
   },
   module: {
     rules: [
@@ -19,9 +20,22 @@ module.exports = {
         test: /\.html$/,
         use: [
           {
-            loader: 'html-loader',
-          },
-        ],
+            loader: 'html-loader'
+          }
+        ]
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: 'babel-loader'
+          }
+        ]
       },
       {
         test: /\.(png|svg|jpe?g|gif)$/,
@@ -29,11 +43,11 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: '[name].[ext]',
-              outputPath: 'images',
-            },
-          },
-        ],
+              name: '[name].[contentHash].[ext]',
+              outputPath: 'images'
+            }
+          }
+        ]
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
@@ -41,27 +55,24 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: '[name].[ext]',
-              outputPath: 'font',
-            },
-          },
-        ],
-      },
-      {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        use: [
-          {
-            loader: 'babel-loader',
-          },
-        ],
-      },
-    ],
+              name: '[name].[contentHash].[ext]',
+              outputPath: 'fonts'
+            }
+          }
+        ]
+      }
+    ]
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './public/index.html',
+      template: './public/index.html'
     }),
-    new CleanWebpackPlugin(),
-  ],
+    new PreloadWebpackPlugin({
+      rel: 'preload',
+      include: 'allAssets',
+      as: 'font',
+      fileWhitelist: [/\.ttf/]
+    }),
+    new CleanWebpackPlugin()
+  ]
 };
