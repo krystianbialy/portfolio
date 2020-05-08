@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 export const Footer = styled.footer`
-  position: absolute;
-  bottom: 0;
   text-align: center;
   width: 100%;
   height: 50px;
@@ -16,7 +14,7 @@ export const Footer = styled.footer`
 
 export const FooterText = styled.p`
   font-size: 15px;
-  margin-top: 15px;
+  padding-top: 15px;
 
   @media (min-width: 960px) {
     font-size: 16px;

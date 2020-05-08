@@ -1,0 +1,40 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "image": "img-1",
+      "name": "TEST1",
+      "description": "TEST1",
+      "live_link": "https://kbialy-calculator.netlify.app",
+      "code_link": "https://github.com/krystianbialy/calculator",
+      "more_link": "https://github.com/krystianbialy/calculator#general-info"
+    },
+    {
+      "id": "2",
+      "image": "img-2",
+      "name": "TEST2",
+      "description": "TEST2",
+      "live_link": "https://kbialy-calculator.netlify.app",
+      "code_link": "https://github.com/krystianbialy/calculator",
+      "more_link": "https://github.com/krystianbialy/calculator#general-info"
+    },
+    {
+      "id": "3",
+      "image": "img-3",
+      "name": "TEST3",
+      "description": "TEST3",
+      "live_link": "https://kbialy-calculator.netlify.app",
+      "code_link": "https://github.com/krystianbialy/calculator",
+      "more_link": "https://github.com/krystianbialy/calculator#general-info"
+    },
+    {
+      "id": "4",
+      "image": "img-4",
+      "name": "TEST4",
+      "description": "TEST4",
+      "live_link": "https://kbialy-calculator.netlify.app",
+      "code_link": "https://github.com/krystianbialy/calculator",
+      "more_link": "https://github.com/krystianbialy/calculator#general-info"
+    }
+  ]
+}
