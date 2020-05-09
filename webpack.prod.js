@@ -3,6 +3,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const PreloadWebpackPlugin = require('preload-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const FileManagerPlugin = require('filemanager-webpack-plugin');
 
 module.exports = {
   mode: 'production',
@@ -73,6 +74,16 @@ module.exports = {
       as: 'font',
       fileWhitelist: [/\.ttf/]
     }),
-    new CleanWebpackPlugin()
+    new CleanWebpackPlugin(),
+    new FileManagerPlugin({
+      onEnd: {
+        copy: [
+          {
+            source: './src/data/projects.data.json',
+            destination: './dist/data'
+          }
+        ]
+      }
+    })
   ]
 };

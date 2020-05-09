@@ -14,7 +14,7 @@ import {
 export const PortfolioComponent = () => {
   const [projectsData, setProjectsData] = useState([]);
 
-  const apiInitialUrl = '/src/data/projects.data.json';
+  const apiInitialUrl = '/dist/data/projects.data.json';
 
   useEffect(() => {
     const fetchData = async () => {
