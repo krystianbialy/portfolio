@@ -2,39 +2,57 @@
   "projects": [
     {
       "id": "1",
-      "image": "img-1",
-      "name": "TEST1",
-      "description": "TEST1",
-      "live_link": "https://kbialy-calculator.netlify.app",
-      "code_link": "https://github.com/krystianbialy/calculator",
-      "more_link": "https://github.com/krystianbialy/calculator#general-info"
+      "image": "images/projects/react-boilerplate.png",
+      "technologies": {
+        "html": "images/technologies/html-logo.png",
+        "styled_components": "images/technologies/styled-components-logo.png",
+        "react": "images/technologies/react-logo.png"
+      },
+      "description": "My own React Boilerplate. Simple, fast, light.",
+      "live_link": "https://kb-react-boilerplate.netlify.app",
+      "code_link": "https://github.com/krystianbialy/react-boilerplate",
+      "more_link": "https://github.com/krystianbialy/react-boilerplate#general-info"
     },
     {
       "id": "2",
-      "image": "img-2",
-      "name": "TEST2",
-      "description": "TEST2",
+      "image": "images/projects/calculator.png",
+      "technologies": {
+        "html": "images/technologies/html-logo.png",
+        "sass": "images/technologies/sass-logo.png",
+        "js": "images/technologies/js-logo.png"
+      },
+      "description": "Advanced calculator + NBP API",
       "live_link": "https://kbialy-calculator.netlify.app",
       "code_link": "https://github.com/krystianbialy/calculator",
       "more_link": "https://github.com/krystianbialy/calculator#general-info"
     },
     {
       "id": "3",
-      "image": "img-3",
-      "name": "TEST3",
-      "description": "TEST3",
-      "live_link": "https://kbialy-calculator.netlify.app",
-      "code_link": "https://github.com/krystianbialy/calculator",
-      "more_link": "https://github.com/krystianbialy/calculator#general-info"
+      "image": "images/projects/unam-project.png",
+      "technologies": {
+        "html": "images/technologies/html-logo.png",
+        "sass": "images/technologies/sass-logo.png",
+        "js": "images/technologies/js-logo.png",
+        "jquery": "images/technologies/jquery-logo.png",
+        "php": "images/technologies/php-logo.png"
+      },
+      "description": "This page is for UNAM company.",
+      "live_link": "https://unam-project.netlify.app",
+      "code_link": "https://github.com/krystianbialy/unam-project",
+      "more_link": "https://github.com/krystianbialy/unam-project#general-info"
     },
     {
       "id": "4",
-      "image": "img-4",
-      "name": "TEST4",
-      "description": "TEST4",
-      "live_link": "https://kbialy-calculator.netlify.app",
-      "code_link": "https://github.com/krystianbialy/calculator",
-      "more_link": "https://github.com/krystianbialy/calculator#general-info"
+      "image": "images/projects/quiz.png",
+      "technologies": {
+        "html": "images/technologies/html-logo.png",
+        "sass": "images/technologies/sass-logo.png",
+        "js": "images/technologies/js-logo.png"
+      },
+      "description": "Quiz application",
+      "live_link": "https://kbialy-quiz.netlify.app",
+      "code_link": "https://github.com/krystianbialy/quiz",
+      "more_link": "https://github.com/krystianbialy/quiz#quiz"
     }
   ]
 }

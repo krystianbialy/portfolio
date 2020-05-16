@@ -81,6 +81,10 @@ module.exports = {
           {
             source: './src/data/projects.data.json',
             destination: './dist/data'
+          },
+          {
+            source: './src/images/**/*.png',
+            destination: './dist/images'
           }
         ]
       }

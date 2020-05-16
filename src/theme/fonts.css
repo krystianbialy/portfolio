@@ -1,9 +1,11 @@
 @font-face {
   font-family: Russo One;
+  font-display: swap;
   src: url(../fonts/RussoOne-Regular.ttf);
 }
 
 @font-face {
   font-family: Merienda One;
+  font-display: swap;
   src: url(../fonts/MeriendaOne-Regular.ttf);
 }
