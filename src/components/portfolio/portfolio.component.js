@@ -32,9 +32,7 @@ export const PortfolioComponent = () => {
         console.error('API response error', error);
       }
     };
-    setTimeout(() => {
-      fetchData();
-    }, 2000);
+    fetchData();
   }, []);
 
   return (

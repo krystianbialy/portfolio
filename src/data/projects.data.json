@@ -2,11 +2,11 @@
   "projects": [
     {
       "id": "1",
-      "image": "images/projects/react-boilerplate.png",
+      "image": "/dist/images/projects/react-boilerplate.png",
       "technologies": {
-        "html": "images/technologies/html-logo.png",
-        "styled_components": "images/technologies/styled-components-logo.png",
-        "react": "images/technologies/react-logo.png"
+        "html": "/dist/images/technologies/html-logo.png",
+        "styled_components": "/dist/images/technologies/styled-components-logo.png",
+        "react": "/dist/images/technologies/react-logo.png"
       },
       "description": "My own React Boilerplate. Simple, fast, light.",
       "live_link": "https://kb-react-boilerplate.netlify.app",
@@ -15,11 +15,11 @@
     },
     {
       "id": "2",
-      "image": "images/projects/calculator.png",
+      "image": "/dist/images/projects/calculator.png",
       "technologies": {
-        "html": "images/technologies/html-logo.png",
-        "sass": "images/technologies/sass-logo.png",
-        "js": "images/technologies/js-logo.png"
+        "html": "/dist/images/technologies/html-logo.png",
+        "sass": "/dist/images/technologies/sass-logo.png",
+        "js": "/dist/images/technologies/js-logo.png"
       },
       "description": "Advanced calculator + NBP API",
       "live_link": "https://kbialy-calculator.netlify.app",
@@ -28,13 +28,13 @@
     },
     {
       "id": "3",
-      "image": "images/projects/unam-project.png",
+      "image": "/dist/images/projects/unam-project.png",
       "technologies": {
-        "html": "images/technologies/html-logo.png",
-        "sass": "images/technologies/sass-logo.png",
-        "js": "images/technologies/js-logo.png",
-        "jquery": "images/technologies/jquery-logo.png",
-        "php": "images/technologies/php-logo.png"
+        "html": "/dist/images/technologies/html-logo.png",
+        "sass": "/dist/images/technologies/sass-logo.png",
+        "js": "/dist/images/technologies/js-logo.png",
+        "jquery": "/dist/images/technologies/jquery-logo.png",
+        "php": "/dist/images/technologies/php-logo.png"
       },
       "description": "This page is for UNAM company.",
       "live_link": "https://unam-project.netlify.app",
@@ -43,11 +43,11 @@
     },
     {
       "id": "4",
-      "image": "images/projects/quiz.png",
+      "image": "/dist/images/projects/quiz.png",
       "technologies": {
-        "html": "images/technologies/html-logo.png",
-        "sass": "images/technologies/sass-logo.png",
-        "js": "images/technologies/js-logo.png"
+        "html": "/dist/images/technologies/html-logo.png",
+        "sass": "/dist/images/technologies/sass-logo.png",
+        "js": "/dist/images/technologies/js-logo.png"
       },
       "description": "Quiz application",
       "live_link": "https://kbialy-quiz.netlify.app",
