@@ -18,7 +18,7 @@ export const PortfolioComponent = () => {
   const [loading, setLoading] = useState(true);
   const [projectsData, setProjectsData] = useState([]);
 
-  const apiInitialUrl = '/src/data/projects.data.json';
+  const apiInitialUrl = './data/projects.data.json';
 
   useEffect(() => {
     const fetchData = async () => {
