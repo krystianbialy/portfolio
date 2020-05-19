@@ -1,8 +1,21 @@
 import styled from 'styled-components';
 
-export const Container = styled.section``;
+export const Container = styled.section`
+  @media (min-width: 700px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
 
-export const ProjectWrapper = styled.div``;
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(2, 600px);
+  }
+`;
+
+export const ProjectWrapper = styled.div`
+  max-width: 600px;
+  margin: 0 auto;
+`;
 
 export const Project = styled.div`
   width: 90%;
@@ -18,6 +31,7 @@ export const Project = styled.div`
 export const ProjectImg = styled.img`
   width: 100%;
   height: auto;
+  border-bottom: 6px solid #d3d3d3;
 `;
 
 export const ProjectTechnologies = styled.div`
@@ -31,10 +45,13 @@ export const ProjectTechnology = styled.img`
 `;
 
 export const ProjectDescription = styled.p`
+  font-family: Roboto;
+  font-size: 17px;
   margin: 0 12px;
 `;
 
 export const Buttons = styled.div`
+  font-family: Roboto;
   display: flex;
   width: 90%;
   margin: 0 auto 25px auto;
@@ -59,6 +76,11 @@ export const ButtonLive = styled.a`
   &:focus {
     text-decoration: none;
     outline: none;
+  }
+
+  &:hover {
+    background: #578ca9;
+    color: #fff;
   }
 `;
 

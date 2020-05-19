@@ -41,8 +41,8 @@ export const PortfolioComponent = () => {
       {!loading &&
         projectsData.map((project) => {
           return (
-            <ProjectWrapper>
-              <Project key={project.id}>
+            <ProjectWrapper key={project.id}>
+              <Project>
                 <ProjectImg src={project.image} />
                 <ProjectTechnologies>
                   {Object.values(project.technologies).map(

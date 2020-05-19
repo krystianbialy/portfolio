@@ -36,7 +36,7 @@
         "jquery": "../images/technologies/jquery-logo.png",
         "php": "../images/technologies/php-logo.png"
       },
-      "description": "This page is for UNAM company.",
+      "description": "Website for UNAM company.",
       "live_link": "https://unam-project.netlify.app",
       "code_link": "https://github.com/krystianbialy/unam-project",
       "more_link": "https://github.com/krystianbialy/unam-project#general-info"
