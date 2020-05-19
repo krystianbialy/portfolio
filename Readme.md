@@ -18,7 +18,7 @@ Project is created with:
 
 ## Status
 
-under construction
+finieshed
 
 ## Setup
 
@@ -29,9 +29,3 @@ $ cd ../lorem
 $ yarn install
 $ yarn dev
 ```
-
-## Sources
-
-#### under-construction img url:
-
-- https://pixabay.com/illustrations/maintenance-under-construction-2422171
