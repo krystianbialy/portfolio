@@ -12,7 +12,7 @@ import {
   MediaIconLinkedin
 } from './header.styled';
 
-export const HeaderComponent = () => {
+const HeaderComponent = () => {
   return (
     <Header>
       <Grid>
@@ -34,3 +34,5 @@ export const HeaderComponent = () => {
     </Header>
   );
 };
+
+export default HeaderComponent;

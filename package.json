@@ -47,6 +47,7 @@
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-loading-skeleton": "^2.0.1",
+    "react-router-dom": "^5.2.0",
     "styled-components": "^5.1.0",
     "terser-webpack-plugin": "^2.3.6"
   }

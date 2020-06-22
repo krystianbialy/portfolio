@@ -1,7 +1,7 @@
 import React from 'react';
 import { Footer, FooterText } from './footer.styled';
 
-export const FooterComponent = () => {
+const FooterComponent = () => {
   const today = new Date();
   const year = today.getFullYear();
 
@@ -11,3 +11,5 @@ export const FooterComponent = () => {
     </Footer>
   );
 };
+
+export default FooterComponent;

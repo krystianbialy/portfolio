@@ -1,5 +1,17 @@
 import styled from 'styled-components';
 
+export const SkeletonGrid = styled.div`
+  @media (min-width: 700px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(2, 600px);
+  }
+`;
+
 export const SkeletonOverlay = styled.div`
   width: 90%;
   height: 371px;

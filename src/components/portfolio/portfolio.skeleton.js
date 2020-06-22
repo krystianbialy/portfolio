@@ -1,11 +1,11 @@
 import React from 'react';
 import Skeleton from 'react-loading-skeleton';
-import { SkeletonOverlay } from './skeleton.styled';
+import { SkeletonGrid, SkeletonOverlay } from './skeleton.styled';
 
 export const PortfolioSkeleton = () => {
   return (
-    <>
-      {Array(4)
+    <SkeletonGrid>
+      {Array(5)
         .fill()
         .map((item, index) => {
           return (
@@ -15,6 +15,6 @@ export const PortfolioSkeleton = () => {
             </SkeletonOverlay>
           );
         })}
-    </>
+    </SkeletonGrid>
   );
 };
