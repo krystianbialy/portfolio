@@ -16,7 +16,8 @@
       }
     ],
     "import/prefer-default-export": "off",
-    "no-undef": "off"
+    "no-undef": "off",
+    "global-require": "off"
   },
   "parser": "babel-eslint",
   "parserOptions": {

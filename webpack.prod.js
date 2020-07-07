@@ -10,7 +10,8 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[contentHash].js'
+    filename: '[name].[contentHash].js',
+    chunkFilename: '[name].chunk.[contentHash].js'
   },
   optimization: {
     minimizer: [new TerserPlugin()]
@@ -26,10 +27,6 @@ module.exports = {
         ]
       },
       {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader']
-      },
-      {
         test: /\.js$/,
         exclude: /node_modules/,
         use: [
@@ -39,7 +36,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|svg|jpe?g|gif)$/,
+        test: /\.png$/,
         use: [
           {
             loader: 'file-loader',
@@ -51,7 +48,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        test: /\.(woff|woff2)$/,
         use: [
           {
             loader: 'file-loader',
@@ -72,7 +69,7 @@ module.exports = {
       rel: 'preload',
       include: 'allAssets',
       as: 'font',
-      fileWhitelist: [/\.ttf/]
+      fileWhitelist: [/\.woff2/]
     }),
     new CleanWebpackPlugin(),
     new FileManagerPlugin({

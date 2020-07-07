@@ -6,7 +6,8 @@ module.exports = {
   mode: 'development',
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    chunkFilename: '[name].chunk.js'
   },
   module: {
     rules: [
@@ -19,10 +20,6 @@ module.exports = {
         ]
       },
       {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader']
-      },
-      {
         test: /\.js$/,
         exclude: /node_modules/,
         use: [
@@ -32,11 +29,11 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|svg|jpe?g|gif)$/,
+        test: /\.png$/,
         use: ['file-loader']
       },
       {
-        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        test: /\.(woff|woff2)$/,
         use: ['file-loader']
       }
     ]
@@ -49,7 +46,7 @@ module.exports = {
       rel: 'preload',
       include: 'allAssets',
       as: 'font',
-      fileWhitelist: [/\.ttf/]
+      fileWhitelist: [/\.woff2/]
     })
   ]
 };
