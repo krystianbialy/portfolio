@@ -120,17 +120,17 @@
       "image_png": "../images/projects/png/quiz.png",
       "technologies": [
         {
-          "id": "1html",
+          "id": "html",
           "webp": "../images/technologies/webp/html-logo.webp",
           "png": "../images/technologies/png/html-logo.png"
         },
         {
-          "id": "1sass",
+          "id": "sass",
           "webp": "../images/technologies/webp/sass-logo.webp",
           "png": "../images/technologies/png/sass-logo.png"
         },
         {
-          "id": "1js",
+          "id": "js",
           "webp": "../images/technologies/webp/js-logo.webp",
           "png": "../images/technologies/png/js-logo.png"
         }
