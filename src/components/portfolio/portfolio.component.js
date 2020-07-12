@@ -25,14 +25,19 @@ const PortfolioComponent = () => {
         return (
           <ProjectWrapper key={project.id}>
             <Project>
-              <ProjectImg src={project.image} />
+              <ProjectImg>
+                <source srcSet={project.image_webp} type="image/webp" />
+                <img src={project.image_png} alt="" />
+              </ProjectImg>
               <ProjectTechnologies>
-                {Object.values(project.technologies).map(
-                  (technology, index) => {
-                    // eslint-disable-next-line react/no-array-index-key
-                    return <ProjectTechnology src={technology} key={index} />;
-                  }
-                )}
+                {project.technologies.map((technology) => {
+                  return (
+                    <ProjectTechnology key={technology.id}>
+                      <source srcSet={technology.webp} />
+                      <img src={technology.png} alt="" />
+                    </ProjectTechnology>
+                  );
+                })}
               </ProjectTechnologies>
               <ProjectDescription>{project.description}</ProjectDescription>
             </Project>

@@ -2,12 +2,25 @@
   "projects": [
     {
       "id": "5",
-      "image": "../images/projects/image-search-engine-with-giphy-api.png",
-      "technologies": {
-        "html": "../images/technologies/html-logo.png",
-        "styled_components": "../images/technologies/styled-components-logo.png",
-        "react": "../images/technologies/react-logo.png"
-      },
+      "image_webp": "../images/projects/webp/image-search-engine-with-giphy-api.webp",
+      "image_png": "../images/projects/png/image-search-engine-with-giphy-api.png",
+      "technologies": [
+        {
+          "id": "html",
+          "webp": "../images/technologies/webp/html-logo.webp",
+          "png": "../images/technologies/png/html-logo.png"
+        },
+        {
+          "id": "styled_components",
+          "webp": "../images/technologies/webp/styled-components-logo.webp",
+          "png": "../images/technologies/png/styled-components-logo.png"
+        },
+        {
+          "id": "react",
+          "webp": "../images/technologies/webp/react-logo.webp",
+          "png": "../images/technologies/png/react-logo.png"
+        }
+      ],
       "description": "Image search engine with Giphy API.",
       "live_link": "https://kb-giphy-api.netlify.app",
       "code_link": "https://github.com/krystianbialy/image-search-engine-with-giphy-api",
@@ -15,12 +28,25 @@
     },
     {
       "id": "4",
-      "image": "../images/projects/react-boilerplate.png",
-      "technologies": {
-        "html": "../images/technologies/html-logo.png",
-        "styled_components": "../images/technologies/styled-components-logo.png",
-        "react": "../images/technologies/react-logo.png"
-      },
+      "image_webp": "../images/projects/webp/react-boilerplate.webp",
+      "image_png": "../images/projects/png/react-boilerplate.png",
+      "technologies": [
+        {
+          "id": "html",
+          "webp": "../images/technologies/webp/html-logo.webp",
+          "png": "../images/technologies/png/html-logo.png"
+        },
+        {
+          "id": "styled_components",
+          "webp": "../images/technologies/webp/styled-components-logo.webp",
+          "png": "../images/technologies/png/styled-components-logo.png"
+        },
+        {
+          "id": "react",
+          "webp": "../images/technologies/webp/react-logo.webp",
+          "png": "../images/technologies/png/react-logo.png"
+        }
+      ],
       "description": "My own React Boilerplate. Simple, fast, light.",
       "live_link": "https://kb-react-boilerplate.netlify.app",
       "code_link": "https://github.com/krystianbialy/react-boilerplate",
@@ -28,12 +54,25 @@
     },
     {
       "id": "3",
-      "image": "../images/projects/calculator.png",
-      "technologies": {
-        "html": "../images/technologies/html-logo.png",
-        "sass": "../images/technologies/sass-logo.png",
-        "js": "../images/technologies/js-logo.png"
-      },
+      "image_webp": "../images/projects/webp/calculator.webp",
+      "image_png": "../images/projects/png/calculator.png",
+      "technologies": [
+        {
+          "id": "html",
+          "webp": "../images/technologies/webp/html-logo.webp",
+          "png": "../images/technologies/png/html-logo.png"
+        },
+        {
+          "id": "sass",
+          "webp": "../images/technologies/webp/sass-logo.webp",
+          "png": "../images/technologies/png/sass-logo.png"
+        },
+        {
+          "id": "js",
+          "webp": "../images/technologies/webp/js-logo.webp",
+          "png": "../images/technologies/png/js-logo.png"
+        }
+      ],
       "description": "Advanced calculator + NBP API",
       "live_link": "https://kbialy-calculator.netlify.app",
       "code_link": "https://github.com/krystianbialy/calculator",
@@ -41,14 +80,35 @@
     },
     {
       "id": "2",
-      "image": "../images/projects/unam-project.png",
-      "technologies": {
-        "html": "../images/technologies/html-logo.png",
-        "sass": "../images/technologies/sass-logo.png",
-        "js": "../images/technologies/js-logo.png",
-        "jquery": "../images/technologies/jquery-logo.png",
-        "php": "../images/technologies/php-logo.png"
-      },
+      "image_webp": "../images/projects/webp/unam-project.webp",
+      "image_png": "../images/projects/png/unam-project.png",
+      "technologies": [
+        {
+          "id": "html",
+          "webp": "../images/technologies/webp/html-logo.webp",
+          "png": "../images/technologies/png/html-logo.png"
+        },
+        {
+          "id": "sass",
+          "webp": "../images/technologies/webp/sass-logo.webp",
+          "png": "../images/technologies/png/sass-logo.png"
+        },
+        {
+          "id": "js",
+          "webp": "../images/technologies/webp/js-logo.webp",
+          "png": "../images/technologies/png/js-logo.png"
+        },
+        {
+          "id": "jquery",
+          "webp": "../images/technologies/webp/jquery-logo.webp",
+          "png": "../images/technologies/png/jquery-logo.png"
+        },
+        {
+          "id": "php",
+          "webp": "../images/technologies/webp/php-logo.webp",
+          "png": "../images/technologies/png/php-logo.png"
+        }
+      ],
       "description": "Website for UNAM company.",
       "live_link": "https://unam-project.netlify.app",
       "code_link": "https://github.com/krystianbialy/unam-project",
@@ -56,12 +116,25 @@
     },
     {
       "id": "1",
-      "image": "../images/projects/quiz.png",
-      "technologies": {
-        "html": "../images/technologies/html-logo.png",
-        "sass": "../images/technologies/sass-logo.png",
-        "js": "../images/technologies/js-logo.png"
-      },
+      "image_webp": "../images/projects/webp/quiz.webp",
+      "image_png": "../images/projects/png/quiz.png",
+      "technologies": [
+        {
+          "id": "1html",
+          "webp": "../images/technologies/webp/html-logo.webp",
+          "png": "../images/technologies/png/html-logo.png"
+        },
+        {
+          "id": "1sass",
+          "webp": "../images/technologies/webp/sass-logo.webp",
+          "png": "../images/technologies/png/sass-logo.png"
+        },
+        {
+          "id": "1js",
+          "webp": "../images/technologies/webp/js-logo.webp",
+          "png": "../images/technologies/png/js-logo.png"
+        }
+      ],
       "description": "Quiz application",
       "live_link": "https://kbialy-quiz.netlify.app",
       "code_link": "https://github.com/krystianbialy/quiz",

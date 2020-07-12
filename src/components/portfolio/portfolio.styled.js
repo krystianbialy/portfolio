@@ -28,20 +28,26 @@ export const Project = styled.div`
   box-shadow: 0px 1px 20px 2px rgba(173, 173, 173, 1);
 `;
 
-export const ProjectImg = styled.img`
-  width: 100%;
-  height: auto;
-  border-bottom: 6px solid #d3d3d3;
+export const ProjectImg = styled.picture`
+  source,
+  img {
+    width: 100%;
+    height: auto;
+    border-bottom: 6px solid #d3d3d3;
+  }
 `;
 
 export const ProjectTechnologies = styled.div`
   margin: 20px 12px;
 `;
 
-export const ProjectTechnology = styled.img`
-  width: auto;
-  height: 35px;
-  margin-right: 15px;
+export const ProjectTechnology = styled.picture`
+  source,
+  img {
+    width: auto;
+    height: 35px;
+    margin-right: 15px;
+  }
 `;
 
 export const ProjectDescription = styled.p`
