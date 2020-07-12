@@ -80,6 +80,10 @@ module.exports = {
             destination: './dist/data'
           },
           {
+            source: './src/images/**/*.webp',
+            destination: './dist/images'
+          },
+          {
             source: './src/images/**/*.png',
             destination: './dist/images'
           }
